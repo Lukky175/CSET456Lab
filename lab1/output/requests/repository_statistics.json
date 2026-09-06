@@ -1,0 +1,3567 @@
+{
+    "repository": {
+        "repository_name": "requests",
+        "total_files": 130,
+        "source_code_files": 37,
+        "directories": 23,
+        "total_loc": 12032,
+        "average_loc_per_source_file": 325.19,
+        "programming_languages": {
+            "Python": 37
+        },
+        "file_type_distribution": {
+            ".py": 37,
+            "[no extension]": 20,
+            ".rst": 16,
+            ".md": 13,
+            ".yml": 10,
+            ".png": 5,
+            ".cnf": 4,
+            ".key": 4,
+            ".csr": 3,
+            ".pem": 3,
+            ".yaml": 2,
+            ".txt": 2,
+            ".in": 1,
+            ".toml": 1,
+            ".ini": 1,
+            ".bat": 1,
+            ".ai": 1,
+            ".svg": 1,
+            ".crt": 1,
+            ".srl": 1,
+            ".typed": 1,
+            ".css": 1,
+            ".html": 1
+        },
+        "largest_source_files": [
+            {
+                "file_path": "tests/test_requests.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 3094,
+                "size_bytes": 111628
+            },
+            {
+                "file_path": "src/requests/models.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 1184,
+                "size_bytes": 42646
+            },
+            {
+                "file_path": "src/requests/utils.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 1155,
+                "size_bytes": 37216
+            },
+            {
+                "file_path": "tests/test_utils.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 1013,
+                "size_bytes": 32467
+            },
+            {
+                "file_path": "src/requests/sessions.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 920,
+                "size_bytes": 34992
+            },
+            {
+                "file_path": "src/requests/adapters.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 748,
+                "size_bytes": 28740
+            },
+            {
+                "file_path": "src/requests/cookies.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 625,
+                "size_bytes": 22129
+            },
+            {
+                "file_path": "tests/test_lowlevel.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 428,
+                "size_bytes": 15771
+            },
+            {
+                "file_path": "docs/conf.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 385,
+                "size_bytes": 12533
+            },
+            {
+                "file_path": "src/requests/auth.py",
+                "language": "Python",
+                "extension": ".py",
+                "loc": 354,
+                "size_bytes": 12461
+            }
+        ],
+        "file_metrics_csv": "D:\\CSET456Lab\\lab1\\output\\requests\\file_metrics.csv"
+    },
+    "git_history": {
+        "total_commits": 6730,
+        "number_of_contributors": 803,
+        "most_active_contributor": {
+            "name": "Kenneth Reitz",
+            "commit_count": 3242
+        },
+        "contributors": [
+            {
+                "author": "Kenneth Reitz",
+                "commit_count": 3242
+            },
+            {
+                "author": "Cory Benfield",
+                "commit_count": 656
+            },
+            {
+                "author": "Nate Prewitt",
+                "commit_count": 381
+            },
+            {
+                "author": "Ian Cordasco",
+                "commit_count": 329
+            },
+            {
+                "author": "Ian Stapleton Cordasco",
+                "commit_count": 105
+            },
+            {
+                "author": "dependabot[bot]",
+                "commit_count": 64
+            },
+            {
+                "author": "Shivaram Lingamneni",
+                "commit_count": 45
+            },
+            {
+                "author": "Braulio Valdivielso Mart\u00ednez",
+                "commit_count": 43
+            },
+            {
+                "author": "David Pursehouse",
+                "commit_count": 31
+            },
+            {
+                "author": "Kevin Burke",
+                "commit_count": 28
+            },
+            {
+                "author": "daftshady",
+                "commit_count": 24
+            },
+            {
+                "author": "Je\u0301re\u0301my Bethmont",
+                "commit_count": 23
+            },
+            {
+                "author": "Chase Sterling",
+                "commit_count": 21
+            },
+            {
+                "author": "Idan Gazit",
+                "commit_count": 20
+            },
+            {
+                "author": "Jon Dufresne",
+                "commit_count": 19
+            },
+            {
+                "author": "Thomas Grainger",
+                "commit_count": 18
+            },
+            {
+                "author": "Mike Waldner",
+                "commit_count": 18
+            },
+            {
+                "author": "Johannes",
+                "commit_count": 17
+            },
+            {
+                "author": "schlamar",
+                "commit_count": 16
+            },
+            {
+                "author": "Kamil Madac",
+                "commit_count": 16
+            },
+            {
+                "author": "Seth Michael Larson",
+                "commit_count": 13
+            },
+            {
+                "author": "Casey Davidson",
+                "commit_count": 12
+            },
+            {
+                "author": "Jason Grout",
+                "commit_count": 12
+            },
+            {
+                "author": "Martijn Pieters",
+                "commit_count": 12
+            },
+            {
+                "author": "Hugo",
+                "commit_count": 11
+            },
+            {
+                "author": "Dmitry Klimenko",
+                "commit_count": 11
+            },
+            {
+                "author": "David Fischer",
+                "commit_count": 11
+            },
+            {
+                "author": "Matt Giuca",
+                "commit_count": 11
+            },
+            {
+                "author": "Alex Chan",
+                "commit_count": 10
+            },
+            {
+                "author": "dbairaktaris1",
+                "commit_count": 10
+            },
+            {
+                "author": "Thomas Wei\u00dfschuh",
+                "commit_count": 10
+            },
+            {
+                "author": "ContinuousFunction",
+                "commit_count": 10
+            },
+            {
+                "author": "Johannes Gorset",
+                "commit_count": 10
+            },
+            {
+                "author": "Daniel Schauenberg",
+                "commit_count": 10
+            },
+            {
+                "author": "Luca De Vitis",
+                "commit_count": 10
+            },
+            {
+                "author": "Chris Adams",
+                "commit_count": 9
+            },
+            {
+                "author": "Riyad Parvez",
+                "commit_count": 9
+            },
+            {
+                "author": "aless10",
+                "commit_count": 8
+            },
+            {
+                "author": "Brian Bamsch",
+                "commit_count": 8
+            },
+            {
+                "author": "Donald Stufft",
+                "commit_count": 8
+            },
+            {
+                "author": "Joseph McCullough",
+                "commit_count": 8
+            },
+            {
+                "author": "anupam-arista",
+                "commit_count": 7
+            },
+            {
+                "author": "Elliot Ford",
+                "commit_count": 7
+            },
+            {
+                "author": "Jeremy Cline",
+                "commit_count": 7
+            },
+            {
+                "author": "Alessio Izzo",
+                "commit_count": 7
+            },
+            {
+                "author": "Sayz Lim",
+                "commit_count": 7
+            },
+            {
+                "author": "Hugo Osvaldo Barrera",
+                "commit_count": 7
+            },
+            {
+                "author": "Alexander 'Leo' Bergolth",
+                "commit_count": 7
+            },
+            {
+                "author": "Dmitry Dygalo",
+                "commit_count": 7
+            },
+            {
+                "author": "Roman Haritonov",
+                "commit_count": 7
+            },
+            {
+                "author": "barberj",
+                "commit_count": 7
+            },
+            {
+                "author": "Josh Imhoff",
+                "commit_count": 7
+            },
+            {
+                "author": "Ori Livneh",
+                "commit_count": 7
+            },
+            {
+                "author": "Zbigniew Siciarz",
+                "commit_count": 7
+            },
+            {
+                "author": "digitalxero",
+                "commit_count": 7
+            },
+            {
+                "author": "\u263f Kenneth Reitz",
+                "commit_count": 6
+            },
+            {
+                "author": "Dull Bananas",
+                "commit_count": 6
+            },
+            {
+                "author": "Alex Gaynor",
+                "commit_count": 6
+            },
+            {
+                "author": "Steven M. Vascellaro",
+                "commit_count": 6
+            },
+            {
+                "author": "Allan Crooks",
+                "commit_count": 6
+            },
+            {
+                "author": "mgasvoda",
+                "commit_count": 6
+            },
+            {
+                "author": "mattkohl",
+                "commit_count": 6
+            },
+            {
+                "author": "Ben",
+                "commit_count": 6
+            },
+            {
+                "author": "Scott Sadler",
+                "commit_count": 6
+            },
+            {
+                "author": "Michael Becker",
+                "commit_count": 6
+            },
+            {
+                "author": "Robert Estelle",
+                "commit_count": 6
+            },
+            {
+                "author": "Bob Carroll",
+                "commit_count": 6
+            },
+            {
+                "author": "Jason Emerick",
+                "commit_count": 6
+            },
+            {
+                "author": "sprt",
+                "commit_count": 6
+            },
+            {
+                "author": "Michael Komitee",
+                "commit_count": 6
+            },
+            {
+                "author": "Piotr Dobrogost",
+                "commit_count": 6
+            },
+            {
+                "author": "Max Countryman",
+                "commit_count": 6
+            },
+            {
+                "author": "ayanamist",
+                "commit_count": 6
+            },
+            {
+                "author": "Michael Holler",
+                "commit_count": 6
+            },
+            {
+                "author": "Chris Dary",
+                "commit_count": 6
+            },
+            {
+                "author": "Den Shabalin",
+                "commit_count": 6
+            },
+            {
+                "author": "Mike Fiedler",
+                "commit_count": 5
+            },
+            {
+                "author": "Denis Belavin",
+                "commit_count": 5
+            },
+            {
+                "author": "David Poole",
+                "commit_count": 5
+            },
+            {
+                "author": "Alvaro Gutierrez Perez",
+                "commit_count": 5
+            },
+            {
+                "author": "Vincent Barbaresi",
+                "commit_count": 5
+            },
+            {
+                "author": "Marcos Dione",
+                "commit_count": 5
+            },
+            {
+                "author": "Ryan Munro",
+                "commit_count": 5
+            },
+            {
+                "author": "vienno",
+                "commit_count": 5
+            },
+            {
+                "author": "exvito",
+                "commit_count": 5
+            },
+            {
+                "author": "Tim Konick",
+                "commit_count": 5
+            },
+            {
+                "author": "Eric L Frederich",
+                "commit_count": 5
+            },
+            {
+                "author": "Ben Bass",
+                "commit_count": 5
+            },
+            {
+                "author": "Kwpolska",
+                "commit_count": 5
+            },
+            {
+                "author": "Ib Lundgren",
+                "commit_count": 5
+            },
+            {
+                "author": "Johnny Goodnow",
+                "commit_count": 5
+            },
+            {
+                "author": "Danilo Bargen",
+                "commit_count": 5
+            },
+            {
+                "author": "Marcus McCurdy",
+                "commit_count": 5
+            },
+            {
+                "author": "Michael Newman",
+                "commit_count": 5
+            },
+            {
+                "author": "Andrey Petrov",
+                "commit_count": 5
+            },
+            {
+                "author": "Ronny Pfannschmidt",
+                "commit_count": 5
+            },
+            {
+                "author": "Richard Boulton",
+                "commit_count": 5
+            },
+            {
+                "author": "Christian Clauss",
+                "commit_count": 4
+            },
+            {
+                "author": "Kevin Kirsche",
+                "commit_count": 4
+            },
+            {
+                "author": "Sylvain MARIE",
+                "commit_count": 4
+            },
+            {
+                "author": "Sorin Sbarnea",
+                "commit_count": 4
+            },
+            {
+                "author": "Antti Kaihola",
+                "commit_count": 4
+            },
+            {
+                "author": "mlcrazy",
+                "commit_count": 4
+            },
+            {
+                "author": "Markus Unterwaditzer",
+                "commit_count": 4
+            },
+            {
+                "author": "tzickel",
+                "commit_count": 4
+            },
+            {
+                "author": "Michael Hunsinger",
+                "commit_count": 4
+            },
+            {
+                "author": "David Poggi",
+                "commit_count": 4
+            },
+            {
+                "author": "Brett Higgins",
+                "commit_count": 4
+            },
+            {
+                "author": "Jesse Shapiro",
+                "commit_count": 4
+            },
+            {
+                "author": "Piotr Jurkiewicz",
+                "commit_count": 4
+            },
+            {
+                "author": "Smiley Barry",
+                "commit_count": 4
+            },
+            {
+                "author": "Lukas Graf",
+                "commit_count": 4
+            },
+            {
+                "author": "colin",
+                "commit_count": 4
+            },
+            {
+                "author": "M.Yasoob Ullah Khalid \u263a",
+                "commit_count": 4
+            },
+            {
+                "author": "Priit Laes",
+                "commit_count": 4
+            },
+            {
+                "author": "Rasmus Scholer (TimelineX)",
+                "commit_count": 4
+            },
+            {
+                "author": "Carol Willing",
+                "commit_count": 4
+            },
+            {
+                "author": "Martin Geisler",
+                "commit_count": 4
+            },
+            {
+                "author": "homm",
+                "commit_count": 4
+            },
+            {
+                "author": "Stephen Huenneke",
+                "commit_count": 4
+            },
+            {
+                "author": "Randy Merrill",
+                "commit_count": 4
+            },
+            {
+                "author": "Andrew Jesaitis",
+                "commit_count": 4
+            },
+            {
+                "author": "yegle",
+                "commit_count": 4
+            },
+            {
+                "author": "Matt Sweeney",
+                "commit_count": 4
+            },
+            {
+                "author": "Locker537",
+                "commit_count": 4
+            },
+            {
+                "author": "Daniel Miller",
+                "commit_count": 4
+            },
+            {
+                "author": "Shrikant Sharat Kandula",
+                "commit_count": 4
+            },
+            {
+                "author": "Rolando Espinoza La fuente",
+                "commit_count": 4
+            },
+            {
+                "author": "Michael Van Veen",
+                "commit_count": 4
+            },
+            {
+                "author": "Gul\u00e1csi Tam\u00e1s",
+                "commit_count": 4
+            },
+            {
+                "author": "Joren Hammudoglu",
+                "commit_count": 3
+            },
+            {
+                "author": "Richard van den Berg",
+                "commit_count": 3
+            },
+            {
+                "author": "Nicola Soranzo",
+                "commit_count": 3
+            },
+            {
+                "author": "Ata Tuzuner",
+                "commit_count": 3
+            },
+            {
+                "author": "mayank",
+                "commit_count": 3
+            },
+            {
+                "author": "Quentin Pradet",
+                "commit_count": 3
+            },
+            {
+                "author": "Alan Yee",
+                "commit_count": 3
+            },
+            {
+                "author": "Frost Ming",
+                "commit_count": 3
+            },
+            {
+                "author": "zurbrugc",
+                "commit_count": 3
+            },
+            {
+                "author": "Eduardo Rodrigues",
+                "commit_count": 3
+            },
+            {
+                "author": "Matthieu Moy",
+                "commit_count": 3
+            },
+            {
+                "author": "Kayla Ngan",
+                "commit_count": 3
+            },
+            {
+                "author": "Laurent Bachelier",
+                "commit_count": 3
+            },
+            {
+                "author": "Remi Rampin",
+                "commit_count": 3
+            },
+            {
+                "author": "jonathan vanasco",
+                "commit_count": 3
+            },
+            {
+                "author": "Bastien G\u00e9rard",
+                "commit_count": 3
+            },
+            {
+                "author": "Hussain",
+                "commit_count": 3
+            },
+            {
+                "author": "Skipper Seabold",
+                "commit_count": 3
+            },
+            {
+                "author": "Kumar Varadarajulu",
+                "commit_count": 3
+            },
+            {
+                "author": "Brian Samek",
+                "commit_count": 3
+            },
+            {
+                "author": "Susan Tan",
+                "commit_count": 3
+            },
+            {
+                "author": "Jon Parise",
+                "commit_count": 3
+            },
+            {
+                "author": "Ravi Prakash Putchala",
+                "commit_count": 3
+            },
+            {
+                "author": "Gert Van Gool",
+                "commit_count": 3
+            },
+            {
+                "author": "latyas(\u61d2)",
+                "commit_count": 3
+            },
+            {
+                "author": "Benjamin Peterson",
+                "commit_count": 3
+            },
+            {
+                "author": "sh1buy",
+                "commit_count": 3
+            },
+            {
+                "author": "Yossi Gottlieb",
+                "commit_count": 3
+            },
+            {
+                "author": "Josh Schneier",
+                "commit_count": 3
+            },
+            {
+                "author": "Avi Das",
+                "commit_count": 3
+            },
+            {
+                "author": "Jason R. Coombs",
+                "commit_count": 3
+            },
+            {
+                "author": "Aaron Iles",
+                "commit_count": 3
+            },
+            {
+                "author": "Roberto Migli",
+                "commit_count": 3
+            },
+            {
+                "author": "Konstantin Podshumok",
+                "commit_count": 3
+            },
+            {
+                "author": "Can Ibanoglu",
+                "commit_count": 3
+            },
+            {
+                "author": "Vikram Oberoi",
+                "commit_count": 3
+            },
+            {
+                "author": "Radu Voicilas",
+                "commit_count": 3
+            },
+            {
+                "author": "ms4py",
+                "commit_count": 3
+            },
+            {
+                "author": "Flavio Curella",
+                "commit_count": 3
+            },
+            {
+                "author": "Viktor Haag",
+                "commit_count": 3
+            },
+            {
+                "author": "Ovidiu Negrut",
+                "commit_count": 3
+            },
+            {
+                "author": "Miikka Koskinen",
+                "commit_count": 3
+            },
+            {
+                "author": "L\u00e1szl\u00f3 Vask\u00f3",
+                "commit_count": 3
+            },
+            {
+                "author": "Matt McClure",
+                "commit_count": 3
+            },
+            {
+                "author": "Pascal Hartig",
+                "commit_count": 3
+            },
+            {
+                "author": "John Peacock",
+                "commit_count": 3
+            },
+            {
+                "author": "Stephen Zhuang",
+                "commit_count": 3
+            },
+            {
+                "author": "Rhys Elsmore",
+                "commit_count": 3
+            },
+            {
+                "author": "Peter Montagner",
+                "commit_count": 3
+            },
+            {
+                "author": "Jakub Roztocil",
+                "commit_count": 3
+            },
+            {
+                "author": "Weston Platter",
+                "commit_count": 3
+            },
+            {
+                "author": "Arup Malakar",
+                "commit_count": 3
+            },
+            {
+                "author": "ben",
+                "commit_count": 3
+            },
+            {
+                "author": "Rohan Jain",
+                "commit_count": 3
+            },
+            {
+                "author": "miguel",
+                "commit_count": 3
+            },
+            {
+                "author": "Jonty Wareing",
+                "commit_count": 3
+            },
+            {
+                "author": "Shrikant Sharat",
+                "commit_count": 3
+            },
+            {
+                "author": "Bryan Helmig",
+                "commit_count": 3
+            },
+            {
+                "author": "Armin Ronacher",
+                "commit_count": 3
+            },
+            {
+                "author": "Rick Mak",
+                "commit_count": 3
+            },
+            {
+                "author": "Jeremy Selier",
+                "commit_count": 3
+            },
+            {
+                "author": "Tom Hogans",
+                "commit_count": 3
+            },
+            {
+                "author": "robmadole",
+                "commit_count": 3
+            },
+            {
+                "author": "Dimitri Papadopoulos Orfanos",
+                "commit_count": 2
+            },
+            {
+                "author": "Dan Blanchard",
+                "commit_count": 2
+            },
+            {
+                "author": "Robin",
+                "commit_count": 2
+            },
+            {
+                "author": "Colin Watson",
+                "commit_count": 2
+            },
+            {
+                "author": "flysee",
+                "commit_count": 2
+            },
+            {
+                "author": "Bruce Adams",
+                "commit_count": 2
+            },
+            {
+                "author": "Boris Verkhovskiy",
+                "commit_count": 2
+            },
+            {
+                "author": "Bruno Alla",
+                "commit_count": 2
+            },
+            {
+                "author": "Micha\u0142 G\u00f3rny",
+                "commit_count": 2
+            },
+            {
+                "author": "\u0411\u043e\u0440\u0438\u0441 \u0412\u0435\u0440\u0445\u043e\u0432\u0441\u043a\u0438\u0439",
+                "commit_count": 2
+            },
+            {
+                "author": "Ben Li-Sauerwine",
+                "commit_count": 2
+            },
+            {
+                "author": "Steve Berdy",
+                "commit_count": 2
+            },
+            {
+                "author": "Ben Bodenmiller",
+                "commit_count": 2
+            },
+            {
+                "author": "Ernest W. Durbin III",
+                "commit_count": 2
+            },
+            {
+                "author": "Hugo van Kemenade",
+                "commit_count": 2
+            },
+            {
+                "author": "David Black",
+                "commit_count": 2
+            },
+            {
+                "author": "Miro Hron\u010dok",
+                "commit_count": 2
+            },
+            {
+                "author": "Ned Batchelder",
+                "commit_count": 2
+            },
+            {
+                "author": "John Samuels",
+                "commit_count": 2
+            },
+            {
+                "author": "Nick Watts",
+                "commit_count": 2
+            },
+            {
+                "author": "sblondon",
+                "commit_count": 2
+            },
+            {
+                "author": "lmvlmv",
+                "commit_count": 2
+            },
+            {
+                "author": "Bu\u011fra \u0130\u015fg\u00fczar",
+                "commit_count": 2
+            },
+            {
+                "author": "\u0411\u0435\u043b\u0430\u0432\u0438\u043d \u0414\u0435\u043d\u0438\u0441",
+                "commit_count": 2
+            },
+            {
+                "author": "s-pace",
+                "commit_count": 2
+            },
+            {
+                "author": "Seth M. Larson",
+                "commit_count": 2
+            },
+            {
+                "author": "Ofek Lev",
+                "commit_count": 2
+            },
+            {
+                "author": "Kyle Altendorf",
+                "commit_count": 2
+            },
+            {
+                "author": "Maina Nick",
+                "commit_count": 2
+            },
+            {
+                "author": "unknown",
+                "commit_count": 2
+            },
+            {
+                "author": "Bruce Merry",
+                "commit_count": 2
+            },
+            {
+                "author": "Michael",
+                "commit_count": 2
+            },
+            {
+                "author": "Pradyun Gedam",
+                "commit_count": 2
+            },
+            {
+                "author": "RatanShreshtha",
+                "commit_count": 2
+            },
+            {
+                "author": "VasiliPupkin256",
+                "commit_count": 2
+            },
+            {
+                "author": "Anton Fedchin",
+                "commit_count": 2
+            },
+            {
+                "author": "Dave Shawley",
+                "commit_count": 2
+            },
+            {
+                "author": "hugovk",
+                "commit_count": 2
+            },
+            {
+                "author": "Pascal Van Acker",
+                "commit_count": 2
+            },
+            {
+                "author": "NikosVlagoidis",
+                "commit_count": 2
+            },
+            {
+                "author": "Felix Yan",
+                "commit_count": 2
+            },
+            {
+                "author": "Ed Morley",
+                "commit_count": 2
+            },
+            {
+                "author": "Jonas Laursen",
+                "commit_count": 2
+            },
+            {
+                "author": "Mike Gilbert",
+                "commit_count": 2
+            },
+            {
+                "author": "shmuelamar",
+                "commit_count": 2
+            },
+            {
+                "author": "Anthony Shaw",
+                "commit_count": 2
+            },
+            {
+                "author": "Ian Epperson",
+                "commit_count": 2
+            },
+            {
+                "author": "Nick Coghlan",
+                "commit_count": 2
+            },
+            {
+                "author": "\u0413\u0435\u0440\u0430\u0441\u0438\u043c\u0435\u043d\u043a\u043e \u0415\u0432\u0433\u0435\u043d\u0438\u0439",
+                "commit_count": 2
+            },
+            {
+                "author": "Aidan Feldman",
+                "commit_count": 2
+            },
+            {
+                "author": "Om Prakash",
+                "commit_count": 2
+            },
+            {
+                "author": "Corey Farwell",
+                "commit_count": 2
+            },
+            {
+                "author": "Carson Lam",
+                "commit_count": 2
+            },
+            {
+                "author": "Keyan Pishdadian",
+                "commit_count": 2
+            },
+            {
+                "author": "Ville Skytt\u00e4",
+                "commit_count": 2
+            },
+            {
+                "author": "Peter Marsh",
+                "commit_count": 2
+            },
+            {
+                "author": "Daniele Tricoli",
+                "commit_count": 2
+            },
+            {
+                "author": "Brandon Sandrowicz",
+                "commit_count": 2
+            },
+            {
+                "author": "shoma",
+                "commit_count": 2
+            },
+            {
+                "author": "Chad Whitacre",
+                "commit_count": 2
+            },
+            {
+                "author": "Jakub Wilk",
+                "commit_count": 2
+            },
+            {
+                "author": "Alexandre Sieira",
+                "commit_count": 2
+            },
+            {
+                "author": "Hosam Aly",
+                "commit_count": 2
+            },
+            {
+                "author": "ueg1990",
+                "commit_count": 2
+            },
+            {
+                "author": "Sabari Kumar Murugesan",
+                "commit_count": 2
+            },
+            {
+                "author": "Andrew Murray",
+                "commit_count": 2
+            },
+            {
+                "author": "benjaminran",
+                "commit_count": 2
+            },
+            {
+                "author": "deronnax",
+                "commit_count": 2
+            },
+            {
+                "author": "Colin Dickson",
+                "commit_count": 2
+            },
+            {
+                "author": "Matt Robenolt",
+                "commit_count": 2
+            },
+            {
+                "author": "Akira Kitada",
+                "commit_count": 2
+            },
+            {
+                "author": "Alexander Nelzin",
+                "commit_count": 2
+            },
+            {
+                "author": "Val Tenyotkin",
+                "commit_count": 2
+            },
+            {
+                "author": "syedsuhail",
+                "commit_count": 2
+            },
+            {
+                "author": "mikecool1000",
+                "commit_count": 2
+            },
+            {
+                "author": "Joe Alcorn",
+                "commit_count": 2
+            },
+            {
+                "author": "Martin Jul",
+                "commit_count": 2
+            },
+            {
+                "author": "Daniel Hahler",
+                "commit_count": 2
+            },
+            {
+                "author": "Roman Levin",
+                "commit_count": 2
+            },
+            {
+                "author": "Tyler Kennedy",
+                "commit_count": 2
+            },
+            {
+                "author": "Espartaco Palma",
+                "commit_count": 2
+            },
+            {
+                "author": "Jeff Knupp",
+                "commit_count": 2
+            },
+            {
+                "author": "ap-Codkelden@github.com",
+                "commit_count": 2
+            },
+            {
+                "author": "cjstapleton",
+                "commit_count": 2
+            },
+            {
+                "author": "Konstantinos Koukopoulos",
+                "commit_count": 2
+            },
+            {
+                "author": "Erik Wickstrom",
+                "commit_count": 2
+            },
+            {
+                "author": "kracekumar",
+                "commit_count": 2
+            },
+            {
+                "author": "Jayson Vantuyl",
+                "commit_count": 2
+            },
+            {
+                "author": "Matt Spitz",
+                "commit_count": 2
+            },
+            {
+                "author": "Randy Morris",
+                "commit_count": 2
+            },
+            {
+                "author": "Yang Zhang",
+                "commit_count": 2
+            },
+            {
+                "author": "s7v7nislands",
+                "commit_count": 2
+            },
+            {
+                "author": "Philippe Ndiaye",
+                "commit_count": 2
+            },
+            {
+                "author": "wasw100",
+                "commit_count": 2
+            },
+            {
+                "author": "James Clarke",
+                "commit_count": 2
+            },
+            {
+                "author": "papaeye",
+                "commit_count": 2
+            },
+            {
+                "author": "\u0141ukasz Langa",
+                "commit_count": 2
+            },
+            {
+                "author": "Colin Dunklau",
+                "commit_count": 2
+            },
+            {
+                "author": "Bryce Boe",
+                "commit_count": 2
+            },
+            {
+                "author": "sursh",
+                "commit_count": 2
+            },
+            {
+                "author": "Dmitry Medvinsky",
+                "commit_count": 2
+            },
+            {
+                "author": "Wilfred Hughes",
+                "commit_count": 2
+            },
+            {
+                "author": "Denis Ryzhkov",
+                "commit_count": 2
+            },
+            {
+                "author": "Chris Lee",
+                "commit_count": 2
+            },
+            {
+                "author": "Ralph Bean",
+                "commit_count": 2
+            },
+            {
+                "author": "Steve Klabnik",
+                "commit_count": 2
+            },
+            {
+                "author": "Juan Riaza",
+                "commit_count": 2
+            },
+            {
+                "author": "Steve Pulec",
+                "commit_count": 2
+            },
+            {
+                "author": "Jian Li",
+                "commit_count": 2
+            },
+            {
+                "author": "Vinod Chandru",
+                "commit_count": 2
+            },
+            {
+                "author": "Phil Freo",
+                "commit_count": 2
+            },
+            {
+                "author": "Hans Lellelid",
+                "commit_count": 2
+            },
+            {
+                "author": "Eric Scrivner",
+                "commit_count": 2
+            },
+            {
+                "author": "Marcin Wielgoszewski",
+                "commit_count": 2
+            },
+            {
+                "author": "bmcustodio",
+                "commit_count": 2
+            },
+            {
+                "author": "Jonathan Halcrow",
+                "commit_count": 2
+            },
+            {
+                "author": "tokuda109",
+                "commit_count": 2
+            },
+            {
+                "author": "Kunal Mehta",
+                "commit_count": 2
+            },
+            {
+                "author": "Eric Hansen",
+                "commit_count": 2
+            },
+            {
+                "author": "Andre Graf",
+                "commit_count": 2
+            },
+            {
+                "author": "Berker Peksag",
+                "commit_count": 2
+            },
+            {
+                "author": "Kristian Glass",
+                "commit_count": 2
+            },
+            {
+                "author": "Victoria Mo",
+                "commit_count": 2
+            },
+            {
+                "author": "Leila Muhtasib",
+                "commit_count": 2
+            },
+            {
+                "author": "Marty Alchin",
+                "commit_count": 2
+            },
+            {
+                "author": "Mher Movsisyan",
+                "commit_count": 2
+            },
+            {
+                "author": "Pierre Chapuis",
+                "commit_count": 2
+            },
+            {
+                "author": "Ian Danforth",
+                "commit_count": 2
+            },
+            {
+                "author": "chadnickbok@gmail.com",
+                "commit_count": 2
+            },
+            {
+                "author": "Brendan Maguire",
+                "commit_count": 2
+            },
+            {
+                "author": "Honza Javorek",
+                "commit_count": 2
+            },
+            {
+                "author": "David Kemp (Work)",
+                "commit_count": 2
+            },
+            {
+                "author": "Lucian Ursu",
+                "commit_count": 2
+            },
+            {
+                "author": "Christopher Davis",
+                "commit_count": 2
+            },
+            {
+                "author": "Ryan Kelly",
+                "commit_count": 2
+            },
+            {
+                "author": "Peter Manser",
+                "commit_count": 2
+            },
+            {
+                "author": "Devin Sevilla",
+                "commit_count": 2
+            },
+            {
+                "author": "Douglas Morrison",
+                "commit_count": 2
+            },
+            {
+                "author": "jbergstroem",
+                "commit_count": 2
+            },
+            {
+                "author": "JensDiemer",
+                "commit_count": 2
+            },
+            {
+                "author": "moliware",
+                "commit_count": 2
+            },
+            {
+                "author": "Yamac",
+                "commit_count": 1
+            },
+            {
+                "author": "Lo\u00efc Pernod",
+                "commit_count": 1
+            },
+            {
+                "author": "aldbr",
+                "commit_count": 1
+            },
+            {
+                "author": "Kaeun Kim",
+                "commit_count": 1
+            },
+            {
+                "author": "Sebastian Meyer",
+                "commit_count": 1
+            },
+            {
+                "author": "typhon8",
+                "commit_count": 1
+            },
+            {
+                "author": "eggsort",
+                "commit_count": 1
+            },
+            {
+                "author": "Joshua Kothapalle",
+                "commit_count": 1
+            },
+            {
+                "author": "Dejan SANADER",
+                "commit_count": 1
+            },
+            {
+                "author": "Chris Riches",
+                "commit_count": 1
+            },
+            {
+                "author": "Frank Dana",
+                "commit_count": 1
+            },
+            {
+                "author": "rohan436",
+                "commit_count": 1
+            },
+            {
+                "author": "Magsen (CD)",
+                "commit_count": 1
+            },
+            {
+                "author": "Dr Alex Mitre",
+                "commit_count": 1
+            },
+            {
+                "author": "Ethan Price",
+                "commit_count": 1
+            },
+            {
+                "author": "Amin Vakil",
+                "commit_count": 1
+            },
+            {
+                "author": "m0d3v",
+                "commit_count": 1
+            },
+            {
+                "author": "Grant Birkinbine",
+                "commit_count": 1
+            },
+            {
+                "author": "Abhishek Jha",
+                "commit_count": 1
+            },
+            {
+                "author": "Quaylyn Rimer",
+                "commit_count": 1
+            },
+            {
+                "author": "AHMAD FAIZ",
+                "commit_count": 1
+            },
+            {
+                "author": "Jonas Fonseca",
+                "commit_count": 1
+            },
+            {
+                "author": "Piotr Szlazak",
+                "commit_count": 1
+            },
+            {
+                "author": "Arthur Woimb\u00e9e",
+                "commit_count": 1
+            },
+            {
+                "author": "danigm",
+                "commit_count": 1
+            },
+            {
+                "author": "Tim Swe\u00f1a",
+                "commit_count": 1
+            },
+            {
+                "author": "Tim Swe\u00f1a (Swast)",
+                "commit_count": 1
+            },
+            {
+                "author": "duzhuoshanwai",
+                "commit_count": 1
+            },
+            {
+                "author": "jakobheine",
+                "commit_count": 1
+            },
+            {
+                "author": "Branch Vincent",
+                "commit_count": 1
+            },
+            {
+                "author": "agubelu",
+                "commit_count": 1
+            },
+            {
+                "author": "franekmagiera",
+                "commit_count": 1
+            },
+            {
+                "author": "Lumir Balhar",
+                "commit_count": 1
+            },
+            {
+                "author": "Michiel W. Beijen",
+                "commit_count": 1
+            },
+            {
+                "author": "Thomas Dehghani",
+                "commit_count": 1
+            },
+            {
+                "author": "Jaikish Pai",
+                "commit_count": 1
+            },
+            {
+                "author": "Rodrigo Silva",
+                "commit_count": 1
+            },
+            {
+                "author": "Matthew Carruth",
+                "commit_count": 1
+            },
+            {
+                "author": "amkarn258",
+                "commit_count": 1
+            },
+            {
+                "author": "sumedhrao7",
+                "commit_count": 1
+            },
+            {
+                "author": "Johnny.H",
+                "commit_count": 1
+            },
+            {
+                "author": "13steinj",
+                "commit_count": 1
+            },
+            {
+                "author": "Jonas Schell",
+                "commit_count": 1
+            },
+            {
+                "author": "Joren Vrancken",
+                "commit_count": 1
+            },
+            {
+                "author": "Calle Svensson",
+                "commit_count": 1
+            },
+            {
+                "author": "Alexandre Erwin Ittner",
+                "commit_count": 1
+            },
+            {
+                "author": "cpzt",
+                "commit_count": 1
+            },
+            {
+                "author": "Matthew Armand",
+                "commit_count": 1
+            },
+            {
+                "author": "Syed Saifullah",
+                "commit_count": 1
+            },
+            {
+                "author": "Levi",
+                "commit_count": 1
+            },
+            {
+                "author": "Yifang Zhu",
+                "commit_count": 1
+            },
+            {
+                "author": "Matthew Feickert",
+                "commit_count": 1
+            },
+            {
+                "author": "Ashish Kurmi",
+                "commit_count": 1
+            },
+            {
+                "author": "ch-iv",
+                "commit_count": 1
+            },
+            {
+                "author": "Olivia Crain",
+                "commit_count": 1
+            },
+            {
+                "author": "Volker Schaus",
+                "commit_count": 1
+            },
+            {
+                "author": "reeko234",
+                "commit_count": 1
+            },
+            {
+                "author": "deedy5",
+                "commit_count": 1
+            },
+            {
+                "author": "Jaap Roes",
+                "commit_count": 1
+            },
+            {
+                "author": "David Cain",
+                "commit_count": 1
+            },
+            {
+                "author": "Miloslav Pojman",
+                "commit_count": 1
+            },
+            {
+                "author": "Sergey Lyapustin",
+                "commit_count": 1
+            },
+            {
+                "author": "Lum\u00edr 'Frenzy' Balhar",
+                "commit_count": 1
+            },
+            {
+                "author": "Wong Hoi Sing Edison",
+                "commit_count": 1
+            },
+            {
+                "author": "Olivier Gayot",
+                "commit_count": 1
+            },
+            {
+                "author": "davidshivaji",
+                "commit_count": 1
+            },
+            {
+                "author": "Micka\u00ebl Schoentgen",
+                "commit_count": 1
+            },
+            {
+                "author": "Chavithra",
+                "commit_count": 1
+            },
+            {
+                "author": "chyzzqo2",
+                "commit_count": 1
+            },
+            {
+                "author": "Marwan",
+                "commit_count": 1
+            },
+            {
+                "author": "Greg Dubicki",
+                "commit_count": 1
+            },
+            {
+                "author": "\u00c1lvaro Mond\u00e9jar",
+                "commit_count": 1
+            },
+            {
+                "author": "Abhinav Vashisth",
+                "commit_count": 1
+            },
+            {
+                "author": "David Glick",
+                "commit_count": 1
+            },
+            {
+                "author": "David Hotham",
+                "commit_count": 1
+            },
+            {
+                "author": "sha016",
+                "commit_count": 1
+            },
+            {
+                "author": "hodbn",
+                "commit_count": 1
+            },
+            {
+                "author": "Israel Tsadok",
+                "commit_count": 1
+            },
+            {
+                "author": "Thomas Lam",
+                "commit_count": 1
+            },
+            {
+                "author": "Egor",
+                "commit_count": 1
+            },
+            {
+                "author": "Naor Livne",
+                "commit_count": 1
+            },
+            {
+                "author": "\u0414\u0438\u043b\u044f\u043d \u041f\u0430\u043b\u0430\u0443\u0437\u043e\u0432",
+                "commit_count": 1
+            },
+            {
+                "author": "Bern\u00e1t G\u00e1bor",
+                "commit_count": 1
+            },
+            {
+                "author": "Ash Berlin-Taylor",
+                "commit_count": 1
+            },
+            {
+                "author": "TAHRI Ahmed R",
+                "commit_count": 1
+            },
+            {
+                "author": "Francois Marier",
+                "commit_count": 1
+            },
+            {
+                "author": "Mark Bell",
+                "commit_count": 1
+            },
+            {
+                "author": "tallalnparis4ev",
+                "commit_count": 1
+            },
+            {
+                "author": "Coco Mishra",
+                "commit_count": 1
+            },
+            {
+                "author": "Hans96",
+                "commit_count": 1
+            },
+            {
+                "author": "laggardkernel",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrew M. White",
+                "commit_count": 1
+            },
+            {
+                "author": "Peter David McCormick",
+                "commit_count": 1
+            },
+            {
+                "author": "XiaojueGuan",
+                "commit_count": 1
+            },
+            {
+                "author": "Shouro",
+                "commit_count": 1
+            },
+            {
+                "author": "Mateus Dubiela Oliveira",
+                "commit_count": 1
+            },
+            {
+                "author": "jason",
+                "commit_count": 1
+            },
+            {
+                "author": "Kaartic Sivaraam",
+                "commit_count": 1
+            },
+            {
+                "author": "Mathieu Pichette",
+                "commit_count": 1
+            },
+            {
+                "author": "Jonathan",
+                "commit_count": 1
+            },
+            {
+                "author": "Abdullah Selek",
+                "commit_count": 1
+            },
+            {
+                "author": "Ae-Mc",
+                "commit_count": 1
+            },
+            {
+                "author": "Ruben",
+                "commit_count": 1
+            },
+            {
+                "author": "Martin",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrew Jorgensen",
+                "commit_count": 1
+            },
+            {
+                "author": "Sagar Giri",
+                "commit_count": 1
+            },
+            {
+                "author": "Matt Silverlock",
+                "commit_count": 1
+            },
+            {
+                "author": "Nick Krichevsky",
+                "commit_count": 1
+            },
+            {
+                "author": "Kartik Chugh",
+                "commit_count": 1
+            },
+            {
+                "author": "Bharat Raghunathan",
+                "commit_count": 1
+            },
+            {
+                "author": "Dustin Rodrigues",
+                "commit_count": 1
+            },
+            {
+                "author": "Redowan Delowar",
+                "commit_count": 1
+            },
+            {
+                "author": "Chris Withers",
+                "commit_count": 1
+            },
+            {
+                "author": "Alexander Zhukov",
+                "commit_count": 1
+            },
+            {
+                "author": "johnthagen",
+                "commit_count": 1
+            },
+            {
+                "author": "Sumana Harihareswara",
+                "commit_count": 1
+            },
+            {
+                "author": "John Kooker",
+                "commit_count": 1
+            },
+            {
+                "author": "Matthew Peveler",
+                "commit_count": 1
+            },
+            {
+                "author": "Charles Reid",
+                "commit_count": 1
+            },
+            {
+                "author": "Alex K",
+                "commit_count": 1
+            },
+            {
+                "author": "Peter Schutt",
+                "commit_count": 1
+            },
+            {
+                "author": "lzutao",
+                "commit_count": 1
+            },
+            {
+                "author": "Marijn Stapert",
+                "commit_count": 1
+            },
+            {
+                "author": "Nihaal",
+                "commit_count": 1
+            },
+            {
+                "author": "Aadi Bajpai",
+                "commit_count": 1
+            },
+            {
+                "author": "Derek",
+                "commit_count": 1
+            },
+            {
+                "author": "Min ho Kim",
+                "commit_count": 1
+            },
+            {
+                "author": "kobayashi",
+                "commit_count": 1
+            },
+            {
+                "author": "Leon Verrall",
+                "commit_count": 1
+            },
+            {
+                "author": "Jacek Ko\u0142odziej",
+                "commit_count": 1
+            },
+            {
+                "author": "Mads Jensen",
+                "commit_count": 1
+            },
+            {
+                "author": "petar-iv",
+                "commit_count": 1
+            },
+            {
+                "author": "Bj\u00f8rnar Myrheim",
+                "commit_count": 1
+            },
+            {
+                "author": "Ian Gao",
+                "commit_count": 1
+            },
+            {
+                "author": "Tom Christie",
+                "commit_count": 1
+            },
+            {
+                "author": "Grey Baker",
+                "commit_count": 1
+            },
+            {
+                "author": "Jake Treacher",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrew Bonney",
+                "commit_count": 1
+            },
+            {
+                "author": "Steven Loria",
+                "commit_count": 1
+            },
+            {
+                "author": "Rich Abdill",
+                "commit_count": 1
+            },
+            {
+                "author": "Michael R. Bernstein",
+                "commit_count": 1
+            },
+            {
+                "author": "Zachary Schafer",
+                "commit_count": 1
+            },
+            {
+                "author": "juozasget",
+                "commit_count": 1
+            },
+            {
+                "author": "Vinayak Mehta",
+                "commit_count": 1
+            },
+            {
+                "author": "Kale Franz",
+                "commit_count": 1
+            },
+            {
+                "author": "Dohyeon Kim",
+                "commit_count": 1
+            },
+            {
+                "author": "Lucy Linder",
+                "commit_count": 1
+            },
+            {
+                "author": "Eric Brown",
+                "commit_count": 1
+            },
+            {
+                "author": "Chih-Hsuan Yen",
+                "commit_count": 1
+            },
+            {
+                "author": "Martin Durant",
+                "commit_count": 1
+            },
+            {
+                "author": "Raymond Hettinger",
+                "commit_count": 1
+            },
+            {
+                "author": "Rajiv Mayani",
+                "commit_count": 1
+            },
+            {
+                "author": "Nick Timkovich",
+                "commit_count": 1
+            },
+            {
+                "author": "Julien Prigent",
+                "commit_count": 1
+            },
+            {
+                "author": "Victor Shih",
+                "commit_count": 1
+            },
+            {
+                "author": "mingrammer",
+                "commit_count": 1
+            },
+            {
+                "author": "Elias Obeid",
+                "commit_count": 1
+            },
+            {
+                "author": "Hackbright Student",
+                "commit_count": 1
+            },
+            {
+                "author": "Ratan.Kulshreshtha",
+                "commit_count": 1
+            },
+            {
+                "author": "Semen Zhydenko",
+                "commit_count": 1
+            },
+            {
+                "author": "Jonathan Elliott Blum",
+                "commit_count": 1
+            },
+            {
+                "author": "\u041d\u0438\u043a\u0438\u0442\u0430 \u041a\u043e\u043d\u0438\u043d",
+                "commit_count": 1
+            },
+            {
+                "author": "Darren Dormer",
+                "commit_count": 1
+            },
+            {
+                "author": "Zane Bitter",
+                "commit_count": 1
+            },
+            {
+                "author": "Daniel Roseman",
+                "commit_count": 1
+            },
+            {
+                "author": "Mingyuan Xia",
+                "commit_count": 1
+            },
+            {
+                "author": "Tal Einat",
+                "commit_count": 1
+            },
+            {
+                "author": "Nehal J Wani",
+                "commit_count": 1
+            },
+            {
+                "author": "Arthur Vigil",
+                "commit_count": 1
+            },
+            {
+                "author": "INADA Naoki",
+                "commit_count": 1
+            },
+            {
+                "author": "Taylor Rose",
+                "commit_count": 1
+            },
+            {
+                "author": "Kelley Robinson",
+                "commit_count": 1
+            },
+            {
+                "author": "kelley",
+                "commit_count": 1
+            },
+            {
+                "author": "Nikolaos Vlagoidis",
+                "commit_count": 1
+            },
+            {
+                "author": "Nik Nyby",
+                "commit_count": 1
+            },
+            {
+                "author": "Mark Szymanski",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrey Portnoy",
+                "commit_count": 1
+            },
+            {
+                "author": "Alex Muller",
+                "commit_count": 1
+            },
+            {
+                "author": "Kubilay Kocak",
+                "commit_count": 1
+            },
+            {
+                "author": "Justin Mayhew",
+                "commit_count": 1
+            },
+            {
+                "author": "JiuLi Gao",
+                "commit_count": 1
+            },
+            {
+                "author": "Jacob Mansfield",
+                "commit_count": 1
+            },
+            {
+                "author": "Ryan Pineo",
+                "commit_count": 1
+            },
+            {
+                "author": "Benjamin Congdon",
+                "commit_count": 1
+            },
+            {
+                "author": "Ilkka Tuohela",
+                "commit_count": 1
+            },
+            {
+                "author": "Randy Barlow",
+                "commit_count": 1
+            },
+            {
+                "author": "Hong Jen-Yee (PCMan)",
+                "commit_count": 1
+            },
+            {
+                "author": "Chris Gavin",
+                "commit_count": 1
+            },
+            {
+                "author": "Xuanwo",
+                "commit_count": 1
+            },
+            {
+                "author": "Ruben Dura Tari",
+                "commit_count": 1
+            },
+            {
+                "author": "Brian Schiller",
+                "commit_count": 1
+            },
+            {
+                "author": "Shadab Zafar",
+                "commit_count": 1
+            },
+            {
+                "author": "Gary Wu",
+                "commit_count": 1
+            },
+            {
+                "author": "Lutz Horn",
+                "commit_count": 1
+            },
+            {
+                "author": "Victor Pfautz",
+                "commit_count": 1
+            },
+            {
+                "author": "David Fontenot",
+                "commit_count": 1
+            },
+            {
+                "author": "Mislav Cimpers\u030cak",
+                "commit_count": 1
+            },
+            {
+                "author": "Rotem Yaari",
+                "commit_count": 1
+            },
+            {
+                "author": "John L. Villalovos",
+                "commit_count": 1
+            },
+            {
+                "author": "TetraEtc",
+                "commit_count": 1
+            },
+            {
+                "author": "Matthew Medal",
+                "commit_count": 1
+            },
+            {
+                "author": "Moin",
+                "commit_count": 1
+            },
+            {
+                "author": "Peter Inglesby",
+                "commit_count": 1
+            },
+            {
+                "author": "winterJ",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrii Soldatenko",
+                "commit_count": 1
+            },
+            {
+                "author": "Adam Williamson",
+                "commit_count": 1
+            },
+            {
+                "author": "John Dingee",
+                "commit_count": 1
+            },
+            {
+                "author": "Marcin P\u0142onka",
+                "commit_count": 1
+            },
+            {
+                "author": "Christian Heimes",
+                "commit_count": 1
+            },
+            {
+                "author": "Rakib Hasan",
+                "commit_count": 1
+            },
+            {
+                "author": "Greg McLeod",
+                "commit_count": 1
+            },
+            {
+                "author": "Barbara Miller",
+                "commit_count": 1
+            },
+            {
+                "author": "Mike Lissner",
+                "commit_count": 1
+            },
+            {
+                "author": "Chris Martin",
+                "commit_count": 1
+            },
+            {
+                "author": "hootnot",
+                "commit_count": 1
+            },
+            {
+                "author": "Pawel Miech",
+                "commit_count": 1
+            },
+            {
+                "author": "B\u00e5rd Aase",
+                "commit_count": 1
+            },
+            {
+                "author": "Philipp Konrad",
+                "commit_count": 1
+            },
+            {
+                "author": "lovedboy",
+                "commit_count": 1
+            },
+            {
+                "author": "Mohamed Elawadi",
+                "commit_count": 1
+            },
+            {
+                "author": "Stewart Polley",
+                "commit_count": 1
+            },
+            {
+                "author": "Frankie Robertson",
+                "commit_count": 1
+            },
+            {
+                "author": "Ferhat",
+                "commit_count": 1
+            },
+            {
+                "author": "Maik",
+                "commit_count": 1
+            },
+            {
+                "author": "Maik Himstedt",
+                "commit_count": 1
+            },
+            {
+                "author": "Brausepaul",
+                "commit_count": 1
+            },
+            {
+                "author": "Jiayuan Zhang",
+                "commit_count": 1
+            },
+            {
+                "author": "Harrison Jackson",
+                "commit_count": 1
+            },
+            {
+                "author": "Zeusw",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrii Kostenko",
+                "commit_count": 1
+            },
+            {
+                "author": "Joy Zheng",
+                "commit_count": 1
+            },
+            {
+                "author": "John Vandenberg",
+                "commit_count": 1
+            },
+            {
+                "author": "Seppo Yli-Olli",
+                "commit_count": 1
+            },
+            {
+                "author": "messense",
+                "commit_count": 1
+            },
+            {
+                "author": "Lukas Vacek",
+                "commit_count": 1
+            },
+            {
+                "author": "Mark Shannon",
+                "commit_count": 1
+            },
+            {
+                "author": "R\u00e9my HUBSCHER",
+                "commit_count": 1
+            },
+            {
+                "author": "John R. Lenton",
+                "commit_count": 1
+            },
+            {
+                "author": "Hitster GTD",
+                "commit_count": 1
+            },
+            {
+                "author": "Matt Dainty",
+                "commit_count": 1
+            },
+            {
+                "author": "liuyang",
+                "commit_count": 1
+            },
+            {
+                "author": "Alexander Hermes",
+                "commit_count": 1
+            },
+            {
+                "author": "Alexander Shchapov",
+                "commit_count": 1
+            },
+            {
+                "author": "Dave Padovano",
+                "commit_count": 1
+            },
+            {
+                "author": "Tom\u00e1\u0161 Heger",
+                "commit_count": 1
+            },
+            {
+                "author": "Jochen Kupperschmidt",
+                "commit_count": 1
+            },
+            {
+                "author": "Nicolas Delvaux",
+                "commit_count": 1
+            },
+            {
+                "author": "Vincent Bernat",
+                "commit_count": 1
+            },
+            {
+                "author": "Isa Hassen",
+                "commit_count": 1
+            },
+            {
+                "author": "Matt Jordan",
+                "commit_count": 1
+            },
+            {
+                "author": "Tomas Hoger",
+                "commit_count": 1
+            },
+            {
+                "author": "Olle Lundberg",
+                "commit_count": 1
+            },
+            {
+                "author": "Philip Lorenz",
+                "commit_count": 1
+            },
+            {
+                "author": "Artur Siekielski",
+                "commit_count": 1
+            },
+            {
+                "author": "Ann Paul",
+                "commit_count": 1
+            },
+            {
+                "author": "Alex Khomchenko",
+                "commit_count": 1
+            },
+            {
+                "author": "shagun Sodhani",
+                "commit_count": 1
+            },
+            {
+                "author": "Dimitris Bliablias",
+                "commit_count": 1
+            },
+            {
+                "author": "Daniel M\u00fcller",
+                "commit_count": 1
+            },
+            {
+                "author": "Doctor-love",
+                "commit_count": 1
+            },
+            {
+                "author": "sumitbinnani",
+                "commit_count": 1
+            },
+            {
+                "author": "Jim Browne",
+                "commit_count": 1
+            },
+            {
+                "author": "Usman Ehtesham Gul",
+                "commit_count": 1
+            },
+            {
+                "author": "Maximilian Hils",
+                "commit_count": 1
+            },
+            {
+                "author": "Carlos Vargas",
+                "commit_count": 1
+            },
+            {
+                "author": "csparpa",
+                "commit_count": 1
+            },
+            {
+                "author": "Everett Toews",
+                "commit_count": 1
+            },
+            {
+                "author": "qingyunha",
+                "commit_count": 1
+            },
+            {
+                "author": "Baptiste Mispelon",
+                "commit_count": 1
+            },
+            {
+                "author": "Akira J",
+                "commit_count": 1
+            },
+            {
+                "author": "Matej Stuchlik",
+                "commit_count": 1
+            },
+            {
+                "author": "Christopher Peplin",
+                "commit_count": 1
+            },
+            {
+                "author": "Marc Abramowitz",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrew Widdersheim",
+                "commit_count": 1
+            },
+            {
+                "author": "Saimadhav Heblikar",
+                "commit_count": 1
+            },
+            {
+                "author": "Matt Havard",
+                "commit_count": 1
+            },
+            {
+                "author": "Pierre Tardy",
+                "commit_count": 1
+            },
+            {
+                "author": "Paul van der Linden",
+                "commit_count": 1
+            },
+            {
+                "author": "Josh Brown",
+                "commit_count": 1
+            },
+            {
+                "author": "Ulrich Petri",
+                "commit_count": 1
+            },
+            {
+                "author": "requiredfield",
+                "commit_count": 1
+            },
+            {
+                "author": "Kevin Yap",
+                "commit_count": 1
+            },
+            {
+                "author": "Joe Smith",
+                "commit_count": 1
+            },
+            {
+                "author": "Nicholas Avenell",
+                "commit_count": 1
+            },
+            {
+                "author": "Tom S",
+                "commit_count": 1
+            },
+            {
+                "author": "Zhaoyu Luo",
+                "commit_count": 1
+            },
+            {
+                "author": "Chris Kuehl",
+                "commit_count": 1
+            },
+            {
+                "author": "Shrayas",
+                "commit_count": 1
+            },
+            {
+                "author": "Ben Edelman",
+                "commit_count": 1
+            },
+            {
+                "author": "Arthur Darcet",
+                "commit_count": 1
+            },
+            {
+                "author": "rakesh",
+                "commit_count": 1
+            },
+            {
+                "author": "Dan Michael O. Hegg\u00f8",
+                "commit_count": 1
+            },
+            {
+                "author": "morganthrapp",
+                "commit_count": 1
+            },
+            {
+                "author": "Michael DeLay",
+                "commit_count": 1
+            },
+            {
+                "author": "MinRK",
+                "commit_count": 1
+            },
+            {
+                "author": "Jan Kundr\u00e1t",
+                "commit_count": 1
+            },
+            {
+                "author": "Massimiliano Torromeo",
+                "commit_count": 1
+            },
+            {
+                "author": "tat3657",
+                "commit_count": 1
+            },
+            {
+                "author": "Udi Oron",
+                "commit_count": 1
+            },
+            {
+                "author": "Tshepang Lekhonkhobe",
+                "commit_count": 1
+            },
+            {
+                "author": "np-csu",
+                "commit_count": 1
+            },
+            {
+                "author": "Benjamin Kerensa",
+                "commit_count": 1
+            },
+            {
+                "author": "David Gouldin",
+                "commit_count": 1
+            },
+            {
+                "author": "Ben McGinnes",
+                "commit_count": 1
+            },
+            {
+                "author": "Pawe\u0142 Romanowski",
+                "commit_count": 1
+            },
+            {
+                "author": "apr",
+                "commit_count": 1
+            },
+            {
+                "author": "Pavlo Kapyshin",
+                "commit_count": 1
+            },
+            {
+                "author": "Ionel Cristian M\u0103rie\u0219",
+                "commit_count": 1
+            },
+            {
+                "author": "Stan Hu",
+                "commit_count": 1
+            },
+            {
+                "author": "Feng Liu",
+                "commit_count": 1
+            },
+            {
+                "author": "Zack Weinberg",
+                "commit_count": 1
+            },
+            {
+                "author": "Alexander",
+                "commit_count": 1
+            },
+            {
+                "author": "Dustin Oprea",
+                "commit_count": 1
+            },
+            {
+                "author": "Pepijn de Vos",
+                "commit_count": 1
+            },
+            {
+                "author": "\u4f50\u85e4 \u5efa\u592a",
+                "commit_count": 1
+            },
+            {
+                "author": "nonm",
+                "commit_count": 1
+            },
+            {
+                "author": "Pengfei Xue",
+                "commit_count": 1
+            },
+            {
+                "author": "Eric Larson",
+                "commit_count": 1
+            },
+            {
+                "author": "Matthew Schinckel",
+                "commit_count": 1
+            },
+            {
+                "author": "Samuel Hug",
+                "commit_count": 1
+            },
+            {
+                "author": "Qingping Hou",
+                "commit_count": 1
+            },
+            {
+                "author": "Graham Dumpleton",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrew Barnert",
+                "commit_count": 1
+            },
+            {
+                "author": "Sayan Chowdhury",
+                "commit_count": 1
+            },
+            {
+                "author": "libbkmz",
+                "commit_count": 1
+            },
+            {
+                "author": "enkore",
+                "commit_count": 1
+            },
+            {
+                "author": "Paul Matthews",
+                "commit_count": 1
+            },
+            {
+                "author": "Dieter Verfaillie",
+                "commit_count": 1
+            },
+            {
+                "author": "Gavrie Philipson",
+                "commit_count": 1
+            },
+            {
+                "author": "Ian Ross and Ian Cordasco",
+                "commit_count": 1
+            },
+            {
+                "author": "Audrius Butkevicius",
+                "commit_count": 1
+            },
+            {
+                "author": "Lukasz Balcerzak",
+                "commit_count": 1
+            },
+            {
+                "author": "Chen Huang",
+                "commit_count": 1
+            },
+            {
+                "author": "Julien Bouquillon",
+                "commit_count": 1
+            },
+            {
+                "author": "Jeff Mancuso",
+                "commit_count": 1
+            },
+            {
+                "author": "Bruno Oliveira",
+                "commit_count": 1
+            },
+            {
+                "author": "giacomo",
+                "commit_count": 1
+            },
+            {
+                "author": "amercader",
+                "commit_count": 1
+            },
+            {
+                "author": "Chris Warrick",
+                "commit_count": 1
+            },
+            {
+                "author": "Lucas Duailibe",
+                "commit_count": 1
+            },
+            {
+                "author": "Iuri de Silvio",
+                "commit_count": 1
+            },
+            {
+                "author": "Daniel Lindsley",
+                "commit_count": 1
+            },
+            {
+                "author": "Mike Helmick",
+                "commit_count": 1
+            },
+            {
+                "author": "pombredanne",
+                "commit_count": 1
+            },
+            {
+                "author": "Sasha Laundy",
+                "commit_count": 1
+            },
+            {
+                "author": "Kamil Szot",
+                "commit_count": 1
+            },
+            {
+                "author": "Pascal Borreli",
+                "commit_count": 1
+            },
+            {
+                "author": "makto",
+                "commit_count": 1
+            },
+            {
+                "author": "Justin Fenn",
+                "commit_count": 1
+            },
+            {
+                "author": "Jamu Kakar",
+                "commit_count": 1
+            },
+            {
+                "author": "Andreas Damgaard Pedersen",
+                "commit_count": 1
+            },
+            {
+                "author": "Florian Mueller",
+                "commit_count": 1
+            },
+            {
+                "author": "Darjus Loktevic",
+                "commit_count": 1
+            },
+            {
+                "author": "Piotr Staroszczyk",
+                "commit_count": 1
+            },
+            {
+                "author": "Markus Wiik",
+                "commit_count": 1
+            },
+            {
+                "author": "Yehuda Sadeh",
+                "commit_count": 1
+            },
+            {
+                "author": "Christopher Bare",
+                "commit_count": 1
+            },
+            {
+                "author": "ekatsah",
+                "commit_count": 1
+            },
+            {
+                "author": "oczkers",
+                "commit_count": 1
+            },
+            {
+                "author": "Scott Burns",
+                "commit_count": 1
+            },
+            {
+                "author": "Mantas Vidutis",
+                "commit_count": 1
+            },
+            {
+                "author": "David McKeone",
+                "commit_count": 1
+            },
+            {
+                "author": "Jud",
+                "commit_count": 1
+            },
+            {
+                "author": "Paul McMillan",
+                "commit_count": 1
+            },
+            {
+                "author": "David Bonner",
+                "commit_count": 1
+            },
+            {
+                "author": "michaelwheeler",
+                "commit_count": 1
+            },
+            {
+                "author": "Apoc2400",
+                "commit_count": 1
+            },
+            {
+                "author": "Kamil Kisiel",
+                "commit_count": 1
+            },
+            {
+                "author": "Bartek Sarul",
+                "commit_count": 1
+            },
+            {
+                "author": "Natan L",
+                "commit_count": 1
+            },
+            {
+                "author": "Jamshid Afshar",
+                "commit_count": 1
+            },
+            {
+                "author": "Lyndsy Simon",
+                "commit_count": 1
+            },
+            {
+                "author": "Artur Dryomov",
+                "commit_count": 1
+            },
+            {
+                "author": "John Szakmeister",
+                "commit_count": 1
+            },
+            {
+                "author": "Ondrej Slint\u00e1k",
+                "commit_count": 1
+            },
+            {
+                "author": "Keiji Matsuzaki",
+                "commit_count": 1
+            },
+            {
+                "author": "Jonatan Heyman",
+                "commit_count": 1
+            },
+            {
+                "author": "Pavel Dmitriev",
+                "commit_count": 1
+            },
+            {
+                "author": "Russell Davis",
+                "commit_count": 1
+            },
+            {
+                "author": "Lasse Vang Gravesen",
+                "commit_count": 1
+            },
+            {
+                "author": "Gabriel",
+                "commit_count": 1
+            },
+            {
+                "author": "mmartin",
+                "commit_count": 1
+            },
+            {
+                "author": "Alexis M\u00e9taireau",
+                "commit_count": 1
+            },
+            {
+                "author": "Trey Hunner",
+                "commit_count": 1
+            },
+            {
+                "author": "Alan Hamlett",
+                "commit_count": 1
+            },
+            {
+                "author": "Gareth Lloyd",
+                "commit_count": 1
+            },
+            {
+                "author": "Harry Waye",
+                "commit_count": 1
+            },
+            {
+                "author": "Richard Jones",
+                "commit_count": 1
+            },
+            {
+                "author": "asapo",
+                "commit_count": 1
+            },
+            {
+                "author": "Andrew Tolbert",
+                "commit_count": 1
+            },
+            {
+                "author": "Kay Zhu",
+                "commit_count": 1
+            },
+            {
+                "author": "Lucian Branescu Mihaila",
+                "commit_count": 1
+            },
+            {
+                "author": "Radomir Stevanovic",
+                "commit_count": 1
+            },
+            {
+                "author": "Stefan Praszalowicz",
+                "commit_count": 1
+            },
+            {
+                "author": "anentropic",
+                "commit_count": 1
+            },
+            {
+                "author": "Paul",
+                "commit_count": 1
+            },
+            {
+                "author": "S\u00e6var \u00d6fj\u00f6r\u00f0 Magn\u00fasson",
+                "commit_count": 1
+            },
+            {
+                "author": "jorjun",
+                "commit_count": 1
+            },
+            {
+                "author": "karl",
+                "commit_count": 1
+            },
+            {
+                "author": "Marc Schlaich",
+                "commit_count": 1
+            },
+            {
+                "author": "muhtasib",
+                "commit_count": 1
+            },
+            {
+                "author": "Matthias Rahlf",
+                "commit_count": 1
+            },
+            {
+                "author": "Zach Williams",
+                "commit_count": 1
+            },
+            {
+                "author": "Craig de Stigter",
+                "commit_count": 1
+            },
+            {
+                "author": "jkleint",
+                "commit_count": 1
+            },
+            {
+                "author": "Mahmoud Hossam",
+                "commit_count": 1
+            },
+            {
+                "author": "Sascha Peilicke",
+                "commit_count": 1
+            },
+            {
+                "author": "ig0774",
+                "commit_count": 1
+            },
+            {
+                "author": "Torsten Landschoff",
+                "commit_count": 1
+            },
+            {
+                "author": "Michael Schurter",
+                "commit_count": 1
+            },
+            {
+                "author": "JuhaS",
+                "commit_count": 1
+            },
+            {
+                "author": "Tzury Bar Yochay",
+                "commit_count": 1
+            },
+            {
+                "author": "Suraj Barkale",
+                "commit_count": 1
+            },
+            {
+                "author": "Paul Nasrat",
+                "commit_count": 1
+            },
+            {
+                "author": "Michael Edwards",
+                "commit_count": 1
+            },
+            {
+                "author": "ztest",
+                "commit_count": 1
+            },
+            {
+                "author": "Antony Chazapis",
+                "commit_count": 1
+            },
+            {
+                "author": "Adrian",
+                "commit_count": 1
+            },
+            {
+                "author": "Michael Kelly",
+                "commit_count": 1
+            },
+            {
+                "author": "pulpe",
+                "commit_count": 1
+            },
+            {
+                "author": "Christopher Grebs",
+                "commit_count": 1
+            },
+            {
+                "author": "Adam McKerlie",
+                "commit_count": 1
+            },
+            {
+                "author": "Jonathan Drosdeck",
+                "commit_count": 1
+            },
+            {
+                "author": "Pinkerton",
+                "commit_count": 1
+            },
+            {
+                "author": "Jakub Wieczorek",
+                "commit_count": 1
+            },
+            {
+                "author": "asciimoo",
+                "commit_count": 1
+            },
+            {
+                "author": "Luka Zakraj\u0161ek",
+                "commit_count": 1
+            },
+            {
+                "author": "Greg Taylor",
+                "commit_count": 1
+            },
+            {
+                "author": "Telofy",
+                "commit_count": 1
+            },
+            {
+                "author": "Brendon Crawford",
+                "commit_count": 1
+            },
+            {
+                "author": "Mastahyeti",
+                "commit_count": 1
+            },
+            {
+                "author": "Hank Gay",
+                "commit_count": 1
+            },
+            {
+                "author": "Frank Kumro",
+                "commit_count": 1
+            },
+            {
+                "author": "Tom Moertel",
+                "commit_count": 1
+            },
+            {
+                "author": "Ben Edwards",
+                "commit_count": 1
+            },
+            {
+                "author": "Jonas Obrist",
+                "commit_count": 1
+            },
+            {
+                "author": "Nick Hatch",
+                "commit_count": 1
+            },
+            {
+                "author": "Chris Van Horne",
+                "commit_count": 1
+            },
+            {
+                "author": "Ed Summers",
+                "commit_count": 1
+            },
+            {
+                "author": "Bryan Berg",
+                "commit_count": 1
+            },
+            {
+                "author": "Robert Gieseke",
+                "commit_count": 1
+            },
+            {
+                "author": "elpres",
+                "commit_count": 1
+            },
+            {
+                "author": "Raymond Penners",
+                "commit_count": 1
+            },
+            {
+                "author": "jbrendel",
+                "commit_count": 1
+            },
+            {
+                "author": "Patrick",
+                "commit_count": 1
+            },
+            {
+                "author": "Bruno Reni\u00e9",
+                "commit_count": 1
+            },
+            {
+                "author": "Shane McDonald",
+                "commit_count": 1
+            },
+            {
+                "author": "anatomyofashane",
+                "commit_count": 1
+            },
+            {
+                "author": "Daniel Hengeveld",
+                "commit_count": 1
+            },
+            {
+                "author": "Fredrik M\u00f6llerstrand",
+                "commit_count": 1
+            },
+            {
+                "author": "travis",
+                "commit_count": 1
+            },
+            {
+                "author": "Dan Head",
+                "commit_count": 1
+            },
+            {
+                "author": "Pat Nakajima",
+                "commit_count": 1
+            },
+            {
+                "author": "verm666",
+                "commit_count": 1
+            },
+            {
+                "author": "Josselin Jacquard",
+                "commit_count": 1
+            },
+            {
+                "author": "Alejandro Giacometti",
+                "commit_count": 1
+            },
+            {
+                "author": "alopatin",
+                "commit_count": 1
+            },
+            {
+                "author": "zed",
+                "commit_count": 1
+            },
+            {
+                "author": "Mark Story",
+                "commit_count": 1
+            },
+            {
+                "author": "Juarez Bochi",
+                "commit_count": 1
+            },
+            {
+                "author": "Simon Sapin",
+                "commit_count": 1
+            },
+            {
+                "author": "Rube\u0301n Abad",
+                "commit_count": 1
+            },
+            {
+                "author": "Xu Pan",
+                "commit_count": 1
+            },
+            {
+                "author": "Alberto Paro",
+                "commit_count": 1
+            },
+            {
+                "author": "James Rowe",
+                "commit_count": 1
+            },
+            {
+                "author": "Bruno Clermont",
+                "commit_count": 1
+            },
+            {
+                "author": "megane murayama",
+                "commit_count": 1
+            },
+            {
+                "author": "Aram Dulyan",
+                "commit_count": 1
+            },
+            {
+                "author": "Flavio Percoco Premoli",
+                "commit_count": 1
+            }
+        ],
+        "top_frequently_changed_files": [
+            {
+                "file_path": ".github/workflows/run-tests.yml",
+                "change_count": 45
+            },
+            {
+                "file_path": "tests/test_requests.py",
+                "change_count": 35
+            },
+            {
+                "file_path": ".github/workflows/codeql-analysis.yml",
+                "change_count": 30
+            },
+            {
+                "file_path": "HISTORY.md",
+                "change_count": 26
+            },
+            {
+                "file_path": ".github/workflows/lint.yml",
+                "change_count": 25
+            },
+            {
+                "file_path": ".pre-commit-config.yaml",
+                "change_count": 21
+            },
+            {
+                "file_path": ".github/workflows/publish.yml",
+                "change_count": 19
+            },
+            {
+                "file_path": "docs/user/advanced.rst",
+                "change_count": 19
+            },
+            {
+                "file_path": "setup.py",
+                "change_count": 19
+            },
+            {
+                "file_path": "src/requests/utils.py",
+                "change_count": 18
+            }
+        ],
+        "commits_per_month": {
+            "2011-02": 194,
+            "2011-03": 14,
+            "2011-04": 24,
+            "2011-05": 121,
+            "2011-06": 58,
+            "2011-07": 24,
+            "2011-08": 221,
+            "2011-09": 104,
+            "2011-10": 237,
+            "2011-11": 208,
+            "2011-12": 82,
+            "2012-01": 165,
+            "2012-02": 126,
+            "2012-03": 100,
+            "2012-04": 59,
+            "2012-05": 143,
+            "2012-06": 75,
+            "2012-07": 65,
+            "2012-08": 123,
+            "2012-09": 40,
+            "2012-10": 62,
+            "2012-11": 59,
+            "2012-12": 205,
+            "2013-01": 102,
+            "2013-02": 50,
+            "2013-03": 73,
+            "2013-04": 78,
+            "2013-05": 58,
+            "2013-06": 30,
+            "2013-07": 85,
+            "2013-08": 27,
+            "2013-09": 58,
+            "2013-10": 97,
+            "2013-11": 49,
+            "2013-12": 70,
+            "2014-01": 66,
+            "2014-02": 25,
+            "2014-03": 39,
+            "2014-04": 32,
+            "2014-05": 45,
+            "2014-06": 22,
+            "2014-07": 48,
+            "2014-08": 46,
+            "2014-09": 45,
+            "2014-10": 47,
+            "2014-11": 22,
+            "2014-12": 32,
+            "2015-01": 27,
+            "2015-02": 25,
+            "2015-03": 50,
+            "2015-04": 58,
+            "2015-05": 38,
+            "2015-06": 15,
+            "2015-07": 21,
+            "2015-08": 45,
+            "2015-09": 24,
+            "2015-10": 61,
+            "2015-11": 43,
+            "2015-12": 49,
+            "2016-01": 31,
+            "2016-02": 114,
+            "2016-03": 48,
+            "2016-04": 46,
+            "2016-05": 27,
+            "2016-06": 25,
+            "2016-07": 31,
+            "2016-08": 52,
+            "2016-09": 41,
+            "2016-10": 37,
+            "2016-11": 78,
+            "2016-12": 42,
+            "2017-01": 82,
+            "2017-02": 57,
+            "2017-03": 37,
+            "2017-04": 33,
+            "2017-05": 265,
+            "2017-06": 40,
+            "2017-07": 31,
+            "2017-08": 49,
+            "2017-09": 50,
+            "2017-10": 29,
+            "2017-11": 22,
+            "2017-12": 4,
+            "2018-01": 27,
+            "2018-02": 22,
+            "2018-03": 129,
+            "2018-04": 7,
+            "2018-05": 22,
+            "2018-06": 29,
+            "2018-07": 12,
+            "2018-08": 9,
+            "2018-09": 46,
+            "2018-10": 16,
+            "2018-11": 20,
+            "2018-12": 10,
+            "2019-01": 10,
+            "2019-02": 14,
+            "2019-03": 5,
+            "2019-04": 17,
+            "2019-05": 28,
+            "2019-06": 6,
+            "2019-07": 17,
+            "2019-08": 49,
+            "2019-09": 174,
+            "2019-10": 5,
+            "2019-11": 1,
+            "2020-01": 10,
+            "2020-02": 14,
+            "2020-03": 3,
+            "2020-04": 4,
+            "2020-05": 3,
+            "2020-06": 12,
+            "2020-07": 1,
+            "2020-08": 10,
+            "2020-09": 5,
+            "2020-10": 6,
+            "2020-11": 16,
+            "2020-12": 8,
+            "2021-01": 4,
+            "2021-02": 3,
+            "2021-03": 6,
+            "2021-04": 1,
+            "2021-05": 3,
+            "2021-07": 13,
+            "2021-08": 11,
+            "2021-09": 6,
+            "2021-10": 2,
+            "2021-11": 8,
+            "2021-12": 14,
+            "2022-01": 10,
+            "2022-02": 9,
+            "2022-03": 2,
+            "2022-04": 2,
+            "2022-05": 3,
+            "2022-06": 12,
+            "2022-07": 2,
+            "2022-09": 2,
+            "2022-10": 4,
+            "2022-11": 2,
+            "2022-12": 2,
+            "2023-01": 5,
+            "2023-02": 2,
+            "2023-03": 2,
+            "2023-04": 6,
+            "2023-05": 7,
+            "2023-06": 1,
+            "2023-07": 5,
+            "2023-08": 23,
+            "2023-09": 6,
+            "2023-10": 12,
+            "2023-11": 18,
+            "2023-12": 22,
+            "2024-01": 3,
+            "2024-02": 16,
+            "2024-03": 6,
+            "2024-04": 9,
+            "2024-05": 18,
+            "2024-07": 7,
+            "2024-08": 2,
+            "2024-09": 12,
+            "2024-10": 5,
+            "2024-11": 3,
+            "2024-12": 1,
+            "2025-01": 2,
+            "2025-02": 14,
+            "2025-03": 4,
+            "2025-04": 4,
+            "2025-05": 3,
+            "2025-06": 10,
+            "2025-07": 5,
+            "2025-08": 4,
+            "2025-09": 5,
+            "2025-10": 2,
+            "2026-01": 13,
+            "2026-02": 15,
+            "2026-03": 19,
+            "2026-04": 17,
+            "2026-05": 25,
+            "2026-06": 13,
+            "2026-07": 7,
+            "2026-08": 5,
+            "2026-09": 1
+        },
+        "file_change_metrics_scope": "latest_400_commits",
+        "file_change_analysis_window": 400,
+        "average_files_changed_per_month": 12.68,
+        "total_lines_added": 8102,
+        "total_lines_deleted": 5298,
+        "average_added_lines_per_commit": 20.25,
+        "average_deleted_lines_per_commit": 13.24,
+        "git_history_csv": "D:\\CSET456Lab\\lab1\\output\\requests\\git_history_metrics.csv"
+    }
+}
