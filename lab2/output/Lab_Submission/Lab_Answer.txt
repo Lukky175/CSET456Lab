@@ -1,0 +1,14 @@
+Q. Analyze the dataset and list the problems where these datasets can be used.
+
+A. For this dataset, the source-code metrics (LOC, size, language, extension) and Git history metric (change_count) can be used to study software evolution, maintenance, and change patterns. By combining these attributes, we can identify files that are frequently modified, study whether larger files require more changes, compare repositories, and identify files that may require more maintenance attention.
+
+Problems where these datasets can be used:
+
+Change Frequency Prediction – Predict which files are likely to be changed frequently.
+Maintenance Hotspot Detection – Identify files that require frequent maintenance.
+Code Size vs. Change Analysis – Study the relationship between LOC/file size and change frequency.
+Repository Comparison – Compare coding and maintenance patterns across different repositories.
+File Maintenance Classification – Classify files as low, medium, or highly maintained.
+Anomaly Detection – Identify files with unusually high LOC, size, or change count.
+Code Review/Test Prioritization – Identify files that may deserve greater review or testing attention.
+Software Evolution Analysis – Study how source-code characteristics relate to development and maintenance activity.
