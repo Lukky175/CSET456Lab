@@ -43,7 +43,7 @@ Git history is mined to determine:
 -   Number of contributors
 -   Most active contributor
 -   Commits per month
--   Frequently changed files
+-   Frequently changed files (Latest 400 Commits)
 -   Average file changes per month
 -   Average lines added per commit
 -   Average lines deleted per commit
@@ -62,34 +62,28 @@ steps.
 
 Open the project in VS Code or another IDE.
 
-``` text
+
 CSET456Lab/
 └── lab1/
-```
+
 
 ### Step 2 --- Open a Terminal
 
 Navigate to the Lab 1 directory:
 
-``` bash
 cd D:\CSET456Lab\lab1
-```
 
 Use your actual project path if it differs.
 
 ### Step 3 --- Verify Python
 
-``` bash
 python --version
-```
 
 Python 3.x is required.
 
 ### Step 4 --- Verify Git
 
-``` bash
 git --version
-```
 
 Git is required because the application clones repositories and mines
 their history.
@@ -98,31 +92,24 @@ their history.
 
 From the `lab1` directory:
 
-``` bash
 python -u "src\mine_repository.py"
-```
 
 ### Step 6 --- Enter a GitHub Repository URL
 
 The application prompts:
 
-``` text
 Enter GitHub repository URL:
-```
 
 Enter a public GitHub repository URL.
 
 Example:
 
-``` text
 https://github.com/scikit-learn/scikit-learn
-```
 
 ### Step 7 --- Wait for the Analysis
 
 The application performs four stages:
 
-``` text
 Repository Setup
        ↓
 File Metrics
@@ -130,24 +117,21 @@ File Metrics
 Git History Mining
        ↓
 Report Generation
-```
 
 ### Step 8 --- View the Results
 
 Results are generated under:
 
-``` text
 lab1/output/<repository-name>/
-```
 
 Expected files:
 
-``` text
+
 file_metrics.csv
 git_history_metrics.csv
 repository_statistics.json
 summary.md
-```
+
 
 ------------------------------------------------------------------------
 
@@ -155,15 +139,15 @@ summary.md
 
 The application requires one input:
 
-``` text
+
 GitHub repository URL
-```
+
 
 Example:
 
-``` text
+
 https://github.com/scikit-learn/scikit-learn
-```
+
 
 The application then:
 
@@ -242,23 +226,23 @@ A CSV record is generated for every identified source-code file.
 
 Schema:
 
-``` text
+
 file_path,language,extension,loc,size_bytes
-```
+
 
 Example:
 
-``` text
+
 src/main/User.java,Java,.java,184,6212
 src/main/Login.java,Java,.java,237,8192
 src/utils/Parser.java,Java,.java,421,15421
-```
+
 
 Output:
 
-``` text
+
 file_metrics.csv
-```
+
 
 ### Task 3 --- Git History Mining
 
@@ -317,7 +301,7 @@ It answers:
 
 > **How has the repository evolved?**
 
-``` text
+
              SOFTWARE REPOSITORY
                       │
           ┌───────────┴───────────┐
@@ -330,7 +314,7 @@ It answers:
           │                       │
           ▼                       ▼
  "What is here?"          "How did it evolve?"
-```
+
 
 ------------------------------------------------------------------------
 
@@ -339,7 +323,7 @@ It answers:
 The project uses a modular pipeline in which each Python module has a
 specific responsibility.
 
-``` text
+
                     GitHub Repository URL
                               │
                               ▼
@@ -378,26 +362,26 @@ specific responsibility.
               │ repository_statistics.json   │
               │ summary.md                   │
               └──────────────────────────────┘
-```
+
 
 ------------------------------------------------------------------------
 
 ## 8. End-to-End Execution Flow
 
-``` text
-START
-  │
-  ▼
-Enter GitHub Repository URL
-  │
-  ▼
+
+            START
+              │
+              ▼
+  Enter GitHub Repository URL
+              │
+              ▼
 ┌─────────────────────────────┐
 │ 1. Repository Setup         │
 ├─────────────────────────────┤
 │ Validate URL                │
 │ Extract repository name     │
 │ Determine local path        │
-│ Check existing repository  │
+│ Check existing repository   │
 │ Clone if required           │
 └──────────────┬──────────────┘
                │
@@ -443,13 +427,13 @@ Enter GitHub Repository URL
                │
                ▼
               END
-```
+
 
 ------------------------------------------------------------------------
 
 ## 9. Project Directory Structure
 
-``` text
+
 CSET456Lab/
 │
 ├── lab1/
@@ -477,27 +461,27 @@ CSET456Lab/
 │   └── README.md
 │
 └── lab2/
-```
+
 
 ### Generated Directories
 
-``` text
+
 data/repo/
-```
+
 
 stores locally cloned repositories.
 
-``` text
+
 output/
-```
+
 
 stores generated analysis results.
 
 Python may also create:
 
-``` text
+
 __pycache__/
-```
+
 
 This contains Python bytecode and is not part of the analysis.
 
@@ -521,14 +505,14 @@ This contains Python bytecode and is not part of the analysis.
 
 Workflow:
 
-``` text
+
 mine_repository.py
         │
         ├── setup_repository()
         ├── generate_file_metrics()
         ├── generate_git_history_metrics()
         └── generate_reports()
-```
+
 
 The file coordinates the workflow but delegates detailed analysis to the
 other modules.
@@ -548,20 +532,20 @@ cloning.
 
 Example:
 
-``` text
+
 https://github.com/scikit-learn/scikit-learn
                     ↓
               scikit-learn
                     ↓
 lab1/data/repo/scikit-learn/
-```
+
 
 Repositories are cloned using:
 
-``` text
+
 --filter=blob:none
 --no-tags
-```
+
 
 to reduce unnecessary download overhead.
 
@@ -626,9 +610,9 @@ The implementation reads files in binary mode and counts line records.
 
 Therefore:
 
-``` text
+
 LOC = physical lines
-```
+
 
 It is not a logical-statement count and does not remove comments or
 blank lines.
@@ -676,7 +660,7 @@ Git `--numstat` is used instead of generating full patches.
 The Git-history analysis intentionally separates complete-history
 metadata from recent file-change analysis.
 
-``` text
+
 All available commits
         │
         ├── Total commits
@@ -690,7 +674,7 @@ Latest 400 commits
         ├── Additions
         ├── Deletions
         └── Frequently changed files
-```
+
 
 ### Why the Latest 400 Commits?
 
@@ -720,27 +704,27 @@ Contributor with the highest number of commits.
 
 Commit dates are grouped using:
 
-``` text
+
 YYYY-MM
-```
+
 
 Example:
 
-``` text
+
 2026-01 → 35 commits
 2026-02 → 42 commits
 2026-03 → 51 commits
-```
+
 
 ### Average File Changes Per Month
 
 For the latest 400 commits:
 
-``` text
+
 Total file-change events
 ────────────────────────
 Number of calendar months represented
-```
+
 
 This is the average number of **file-change events per calendar month**,
 not the number of unique files.
@@ -750,19 +734,19 @@ file-change events.
 
 ### Average Lines Added Per Commit
 
-``` text
+
 Total lines added
 ─────────────────
 Number of analyzed commits
-```
+
 
 ### Average Lines Deleted Per Commit
 
-``` text
+
 Total lines deleted
 ───────────────────
 Number of analyzed commits
-```
+
 
 ------------------------------------------------------------------------
 
@@ -782,11 +766,11 @@ Contains one row per identified source-code file.
 
 Example:
 
-``` csv
+ csv
 file_path,language,extension,loc,size_bytes
 src/example.py,Python,.py,250,8420
 src/utils.py,Python,.py,180,6120
-```
+
 
 ### `git_history_metrics.csv`
 
@@ -803,11 +787,11 @@ Contains file-change frequency information from the latest 400 commits.
 
 Example:
 
-``` csv
+ csv
 file_path,change_count
 src/example.py,12
 src/utils.py,9
-```
+
 
 These datasets are designed to be reusable in later software-engineering
 analysis.
@@ -822,12 +806,12 @@ Combined machine-readable repository statistics.
 
 High-level structure:
 
-``` json
+ json
 {
   "repository": {},
   "git_history": {}
 }
-```
+
 
 The `repository` section contains metrics such as:
 
@@ -874,7 +858,7 @@ Human-readable Markdown report containing:
 
 ## 15. Output Flow
 
-``` text
+
                          Repository
                               │
                ┌──────────────┴──────────────┐
@@ -892,7 +876,7 @@ Human-readable Markdown report containing:
                               │
                               ▼
                           summary.md
-```
+
 
 ------------------------------------------------------------------------
 
@@ -900,7 +884,7 @@ Human-readable Markdown report containing:
 
 A typical run looks like:
 
-``` text
+
 ======================================================================
           SOFTWARE REPOSITORY MINING - LAB 1
 ======================================================================
@@ -954,7 +938,7 @@ Average Deleted Lines/Commit  : ...
 ======================================================================
 LAB-1 COMPLETED
 ======================================================================
-```
+
 
 ------------------------------------------------------------------------
 
@@ -965,10 +949,10 @@ reuse the existing local repository.
 
 Example:
 
-``` text
+
 Repository already exists locally.
 Using existing repository.
-```
+
 
 This prevents unnecessary repeated cloning.
 
@@ -988,7 +972,7 @@ The project requires:
 
 The implementation primarily uses Python's standard library:
 
-``` text
+
 pathlib
 collections
 datetime
@@ -996,13 +980,13 @@ csv
 json
 subprocess
 urllib.parse
-```
+
 
 If additional dependencies are introduced, they should be added to:
 
-``` text
+
 requirements.txt
-```
+
 
 ------------------------------------------------------------------------
 
@@ -1024,11 +1008,11 @@ Only the latest 400 commits are analyzed for file-level changes.
 
 Git `--numstat` provides:
 
-``` text
+
 additions
 deletions
 file path
-```
+
 
 without generating full patches.
 
@@ -1098,9 +1082,9 @@ A file appearing in multiple commits contributes once per appearance.
 
 Therefore:
 
-``` text
+
 change_count ≠ number of unique files changed
-```
+
 
 ### Current Repository State
 
@@ -1152,13 +1136,13 @@ The project produces the required artifacts:
 
 Expected output:
 
-``` text
+
 output/<repository-name>/
 ├── file_metrics.csv
 ├── git_history_metrics.csv
 ├── repository_statistics.json
 └── summary.md
-```
+
 
 ------------------------------------------------------------------------
 
@@ -1192,16 +1176,16 @@ by this project.
 
 ### Run
 
-``` bash
+ bash
 cd D:\CSET456Lab\lab1
 python -u "src\mine_repository.py"
-```
+
 
 ### Input
 
-``` text
+
 GitHub repository URL
-```
+
 
 ### Current Repository Analysis
 
@@ -1227,13 +1211,13 @@ GitHub repository URL
 
 ### Output
 
-``` text
+
 output/<repository-name>/
 ├── file_metrics.csv
 ├── git_history_metrics.csv
 ├── repository_statistics.json
 └── summary.md
-```
+
 
 ------------------------------------------------------------------------
 
@@ -1242,7 +1226,7 @@ output/<repository-name>/
 This project implements a complete basic **software repository mining
 and profiling pipeline**:
 
-``` text
+
 GitHub Repository
        ↓
 Repository Acquisition
@@ -1258,7 +1242,7 @@ Machine-Readable Datasets
 Repository Statistics
        ↓
 Human-Readable Report
-```
+
 
 The project demonstrates how a software repository can be treated as a
 structured source of software-engineering information rather than simply
