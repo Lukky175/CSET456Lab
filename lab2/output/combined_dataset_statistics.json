@@ -1,0 +1,132 @@
+{
+    "dataset": "combined_dataset",
+    "total_records": 2670,
+    "repositories": 5,
+    "total_loc": 740178,
+    "average_loc": 277.22,
+    "total_size_bytes": 26461897,
+    "average_size_bytes": 9910.82,
+    "total_change_count": 2006,
+    "average_change_count": 0.75,
+    "files_with_history": 633,
+    "files_without_history": 2037,
+    "languages": {
+        "Python": 2567,
+        "Cython": 77,
+        "JavaScript": 11,
+        "C/C++": 7,
+        "C++": 5,
+        "C": 3
+    },
+    "records_per_repository": {
+        "fastapi": 1142,
+        "scikit-learn": 1136,
+        "pytest": 272,
+        "flask": 83,
+        "requests": 37
+    },
+    "top_frequently_changed_files": [
+        {
+            "repository": "requests",
+            "file_path": "tests/test_requests.py",
+            "change_count": 35
+        },
+        {
+            "repository": "flask",
+            "file_path": "src/flask/app.py",
+            "change_count": 29
+        },
+        {
+            "repository": "fastapi",
+            "file_path": "fastapi/__init__.py",
+            "change_count": 23
+        },
+        {
+            "repository": "flask",
+            "file_path": "src/flask/helpers.py",
+            "change_count": 21
+        },
+        {
+            "repository": "pytest",
+            "file_path": "src/_pytest/fixtures.py",
+            "change_count": 20
+        },
+        {
+            "repository": "requests",
+            "file_path": "setup.py",
+            "change_count": 19
+        },
+        {
+            "repository": "flask",
+            "file_path": "src/flask/sansio/app.py",
+            "change_count": 18
+        },
+        {
+            "repository": "scikit-learn",
+            "file_path": "sklearn/linear_model/tests/test_logistic.py",
+            "change_count": 18
+        },
+        {
+            "repository": "requests",
+            "file_path": "src/requests/utils.py",
+            "change_count": 18
+        },
+        {
+            "repository": "pytest",
+            "file_path": "testing/test_assertion.py",
+            "change_count": 18
+        }
+    ],
+    "largest_files_by_loc": [
+        {
+            "repository": "fastapi",
+            "file_path": "tests/test_include_router_defaults_overrides.py",
+            "loc": 7304
+        },
+        {
+            "repository": "fastapi",
+            "file_path": "fastapi/routing.py",
+            "loc": 6447
+        },
+        {
+            "repository": "pytest",
+            "file_path": "testing/python/fixtures.py",
+            "loc": 6224
+        },
+        {
+            "repository": "scikit-learn",
+            "file_path": "sklearn/utils/estimator_checks.py",
+            "loc": 5744
+        },
+        {
+            "repository": "fastapi",
+            "file_path": "fastapi/applications.py",
+            "loc": 4774
+        },
+        {
+            "repository": "scikit-learn",
+            "file_path": "sklearn/metrics/_classification.py",
+            "loc": 4113
+        },
+        {
+            "repository": "scikit-learn",
+            "file_path": "sklearn/preprocessing/_data.py",
+            "loc": 3760
+        },
+        {
+            "repository": "scikit-learn",
+            "file_path": "sklearn/metrics/tests/test_classification.py",
+            "loc": 3749
+        },
+        {
+            "repository": "scikit-learn",
+            "file_path": "sklearn/tree/tests/test_tree.py",
+            "loc": 3662
+        },
+        {
+            "repository": "pytest",
+            "file_path": "testing/test_terminal.py",
+            "loc": 3578
+        }
+    ]
+}

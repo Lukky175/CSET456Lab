@@ -1,0 +1,37 @@
+{
+    "dataset": "source_code_dataset",
+    "total_records": 2670,
+    "repositories": 5,
+    "source_files": 2666,
+    "languages": {
+        "Python": 2567,
+        "Cython": 77,
+        "JavaScript": 11,
+        "C/C++": 7,
+        "C++": 5,
+        "C": 3
+    },
+    "extensions": {
+        ".py": 2567,
+        ".pyx": 52,
+        ".pxd": 23,
+        ".js": 11,
+        ".h": 7,
+        ".cpp": 5,
+        ".c": 3,
+        ".pxi": 2
+    },
+    "total_loc": 740178,
+    "average_loc": 277.22,
+    "maximum_loc": 7304,
+    "minimum_loc": 0,
+    "total_size_bytes": 26461897,
+    "average_size_bytes": 9910.82,
+    "records_per_repository": {
+        "fastapi": 1142,
+        "scikit-learn": 1136,
+        "pytest": 272,
+        "flask": 83,
+        "requests": 37
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "dataset": "commit_history_dataset",
+    "total_records": 2629,
+    "repositories": 5,
+    "unique_files": 2598,
+    "total_change_events": 6606,
+    "average_change_count": 2.51,
+    "maximum_change_count": 216,
+    "minimum_change_count": 1,
+    "records_per_repository": {
+        "fastapi": 1254,
+        "scikit-learn": 769,
+        "pytest": 292,
+        "flask": 163,
+        "requests": 151
+    },
+    "changes_per_repository": {
+        "fastapi": 2380,
+        "flask": 841,
+        "pytest": 871,
+        "requests": 672,
+        "scikit-learn": 1842
+    }
+}
