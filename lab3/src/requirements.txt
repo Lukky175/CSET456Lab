@@ -1,0 +1,7 @@
+pandas
+numpy
+tokenizers
+
+
+
+# pip install pandas numpy scikit-learn tokenizers matplotlib
