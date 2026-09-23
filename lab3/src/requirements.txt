@@ -4,4 +4,4 @@ tokenizers
 
 
 
-# pip install pandas numpy scikit-learn tokenizers matplotlib
+# pip install -r requirements.txt

@@ -31,7 +31,6 @@ NUMBER_OF_SELECTED_TOKENS = 5
 # ============================================================
 
 def print_section(title):
-    """Print a formatted section heading."""
 
     print()
     print("=" * 78)
@@ -40,7 +39,6 @@ def print_section(title):
 
 
 def print_subsection(title):
-    """Print a smaller formatted heading."""
 
     print()
     print("-" * 78)
@@ -54,18 +52,19 @@ def print_subsection(title):
 
 def cosine_similarity(vector_a, vector_b):
     """
-    Calculate cosine similarity between two vectors.
+    Calculate cosine similarity between two embedding vectors.
 
     Formula:
 
-                A · B
-    cosine = -----------
-              ||A|| ||B||
+                    A · B
+    cosine = -------------------
+              ||A|| * ||B||
 
     Range:
-        -1  -> completely opposite directions
-         0  -> orthogonal
-         1  -> same direction
+
+        -1 -> opposite directions
+         0 -> unrelated/orthogonal directions
+         1 -> same direction
     """
 
     norm_a = np.linalg.norm(vector_a)
@@ -85,12 +84,10 @@ def cosine_similarity(vector_a, vector_b):
 # ============================================================
 
 def load_embedding_data():
-    """
-    Load the top-50 token list and random embedding matrix
-    generated during Task 2.
-    """
 
-    print_section("TASK 3 & 4 - LOADING TOKEN AND EMBEDDING DATA")
+    print_section(
+        "TASK 3 & 4 — LOADING TOKEN AND EMBEDDING DATA"
+    )
 
     if not TOP_50_FILE.exists():
 
@@ -108,17 +105,25 @@ def load_embedding_data():
             f"Run Task 2 first."
         )
 
-    print()
-    print("[1/3] Loading top-50 tokens...")
+    # --------------------------------------------------------
+    # Load top 50
+    # --------------------------------------------------------
 
-    top_50 = pd.read_csv(TOP_50_FILE)
+    print("\n[1/3] Loading top-50 token data...")
+
+    top_50 = pd.read_csv(
+        TOP_50_FILE
+    )
 
     print(
         f"      Tokens loaded : {len(top_50)}"
     )
 
-    print()
-    print("[2/3] Loading random embedding matrix...")
+    # --------------------------------------------------------
+    # Load embeddings
+    # --------------------------------------------------------
+
+    print("\n[2/3] Loading random embedding matrix...")
 
     embedding_matrix = np.load(
         EMBEDDING_MATRIX_FILE
@@ -127,6 +132,10 @@ def load_embedding_data():
     print(
         f"      Matrix shape  : {embedding_matrix.shape}"
     )
+
+    # --------------------------------------------------------
+    # Validate
+    # --------------------------------------------------------
 
     if "token" not in top_50.columns:
 
@@ -143,67 +152,104 @@ def load_embedding_data():
     if len(tokens) != embedding_matrix.shape[0]:
 
         raise ValueError(
-            "Number of tokens does not match "
+            "\nNumber of tokens does not match "
             "embedding matrix rows.\n"
-            f"Tokens            : {len(tokens)}\n"
-            f"Embedding rows    : {embedding_matrix.shape[0]}"
+            f"Tokens         : {len(tokens)}\n"
+            f"Embedding rows : {embedding_matrix.shape[0]}"
+        )
+
+    print("\n[3/3] Token and embedding data validated.")
+
+    print(
+        "\n[✓] Task 3/4 input data ready."
+    )
+
+    return (
+        tokens,
+        embedding_matrix,
+        top_50
+    )
+
+
+# ============================================================
+# CLEAN TOKEN FOR TERMINAL
+# ============================================================
+
+def clean_token(token):
+
+    return (
+        str(token)
+        .replace("\n", "\\n")
+        .replace("\r", "\\r")
+        .replace("\t", "\\t")
+    )
+
+
+# ============================================================
+# DISPLAY TOKEN TABLE
+# ============================================================
+
+def display_token_table(
+    top_50,
+    exclude_indices=None
+):
+    """
+    Display the token choices in a compact table.
+
+    exclude_indices:
+        Token indices that should not be displayed.
+
+    Example:
+        If token #2 is selected, #2 will not appear as a
+        possible related token.
+    """
+
+    if exclude_indices is None:
+
+        exclude_indices = set()
+
+    else:
+
+        exclude_indices = set(
+            exclude_indices
         )
 
     print()
-    print("[3/3] Token and embedding data validated.")
 
-    print()
-    print("[✓] Task 3/4 input data ready.")
-
-    return tokens, embedding_matrix, top_50
-
-
-# ============================================================
-# DISPLAY TOP 50 TOKENS
-# ============================================================
-
-def display_top_50_tokens(top_50):
-    """
-    Display the complete top-50 token list.
-
-    The user can use the displayed numbers to select tokens.
-    """
-
-    print_section("TOP 50 MOST FREQUENT SUBWORD TOKENS")
-
-    print()
     print(
         f"{'No.':<6}"
-        f"{'Token':<30}"
+        f"{'Token':<28}"
         f"{'Frequency':>12}"
     )
 
-    print("-" * 52)
+    print("-" * 50)
 
     for index, row in top_50.iterrows():
 
-        token = str(row["token"])
+        token_number = index + 1
 
-        frequency = int(row["frequency"])
+        if token_number in exclude_indices:
+            continue
 
-        # Replace newlines so the terminal remains readable.
-        token = (
-            token
-            .replace("\n", "\\n")
-            .replace("\r", "\\r")
+        token = clean_token(
+            row["token"]
+        )
+
+        frequency = int(
+            row["frequency"]
         )
 
         print(
-            f"{index + 1:<6}"
-            f"{token:<30}"
+            f"{token_number:<6}"
+            f"{token:<28}"
             f"{frequency:>12,}"
         )
 
-    print()
+    print("-" * 50)
 
 
 # ============================================================
-# GET INTEGER INPUT
+# INTEGER INPUT
 # ============================================================
 
 def get_integer_input(
@@ -212,34 +258,40 @@ def get_integer_input(
     maximum
 ):
     """
-    Safely read an integer from the user.
-
-    Keeps asking until the user provides a valid number.
+    Safely obtain an integer from the user.
     """
 
     while True:
 
+        user_input = input(
+            prompt
+        ).strip()
+
         try:
 
             value = int(
-                input(prompt).strip()
-            )
-
-            if minimum <= value <= maximum:
-
-                return value
-
-            print(
-                f"[!] Please enter a number between "
-                f"{minimum} and {maximum}."
+                user_input
             )
 
         except ValueError:
 
             print(
                 "[!] Invalid input. "
-                "Please enter a number."
+                "Enter a number."
             )
+
+            continue
+
+        if value < minimum or value > maximum:
+
+            print(
+                f"[!] Enter a number between "
+                f"{minimum} and {maximum}."
+            )
+
+            continue
+
+        return value
 
 
 # ============================================================
@@ -250,39 +302,46 @@ def select_five_tokens(
     tokens,
     top_50
 ):
-    """
-    Allow the user to select five tokens from the top 50.
 
-    The user selects by number rather than typing the token
-    manually, which prevents spelling mistakes.
-    """
-
-    print_section("TASK 3 - SELECT FIVE TOKENS")
+    print_section(
+        "TASK 3 — SELECT FIVE TOKENS"
+    )
 
     print(
-        "You must select exactly five tokens from the top 50."
+        "Select exactly FIVE tokens from the TOP 50."
+    )
+
+    print(
+        "Use the token numbers shown in the table."
     )
 
     print()
+
     print(
-        "IMPORTANT FOR THE LAB:"
+        "LAB REQUIREMENT:"
     )
 
     print(
-        "At least two of your selected tokens should be "
-        "different from the tokens selected by the student "
-        "sitting next to you."
+        "At least TWO selected tokens should be different"
     )
 
-    print()
     print(
-        "You can coordinate with your neighboring student "
-        "before making the selection."
+        "from the tokens selected by the student next to you."
     )
 
-    print()
+    print_subsection(
+        "TOP 50 TOKENS — USE THESE NUMBERS"
+    )
+
+    display_token_table(
+        top_50
+    )
 
     selected_indices = []
+
+    # --------------------------------------------------------
+    # Selection loop
+    # --------------------------------------------------------
 
     while len(selected_indices) < NUMBER_OF_SELECTED_TOKENS:
 
@@ -292,8 +351,9 @@ def select_five_tokens(
         )
 
         print()
+
         print(
-            f"Tokens still to select: {remaining}"
+            f"Tokens remaining to select: {remaining}"
         )
 
         choice = get_integer_input(
@@ -304,27 +364,32 @@ def select_five_tokens(
 
         index = choice - 1
 
+        # Duplicate check
         if index in selected_indices:
 
             print(
-                "[!] You already selected this token. "
-                "Choose another."
+                "[!] You already selected this token."
             )
 
             continue
 
-        selected_indices.append(index)
-
-        token = tokens[index]
+        selected_indices.append(
+            index
+        )
 
         print(
-            f"[✓] Selected: #{choice} -> {token}"
+            f"[✓] Selected #{choice} -> "
+            f"{clean_token(tokens[index])}"
         )
 
     selected_tokens = [
         tokens[index]
         for index in selected_indices
     ]
+
+    # --------------------------------------------------------
+    # Display final selection
+    # --------------------------------------------------------
 
     print_subsection(
         "YOUR FIVE SELECTED TOKENS"
@@ -336,7 +401,8 @@ def select_five_tokens(
     ):
 
         print(
-            f"{number}. {token}"
+            f"{number}. "
+            f"{clean_token(token)}"
         )
 
     return selected_tokens
@@ -352,89 +418,71 @@ def select_related_token(
     top_50
 ):
     """
-    Ask the user to select the token they personally consider
-    most related to the selected token.
+    Ask the student to choose the token they personally
+    consider most related to the selected token.
 
-    This represents the human-understanding part of Task 3.
+    This is the human judgement component of Task 3.
     """
 
     print()
     print("=" * 78)
 
     print(
-        f"TOKEN: {selected_token}"
+        f"TOKEN: {clean_token(selected_token)}"
     )
 
     print("=" * 78)
 
     print()
+
     print(
-        "Choose the token that YOU consider most related "
-        "to this token."
+        "Choose the token YOU consider most related."
     )
 
-    print()
     print(
         "This is your human/semantic judgement."
     )
 
     print(
-        "The random embedding similarity is NOT used to "
-        "make this decision."
+        "Do NOT use the random embedding similarity "
+        "to make this decision."
     )
 
-    print()
-
-    candidates = []
-
-    for index, token in enumerate(tokens):
-
-        if token == selected_token:
-            continue
-
-        candidates.append(
-            (
-                index,
-                token,
-                int(top_50.iloc[index]["frequency"])
-            )
-        )
-
-    print(
-        f"{'No.':<6}"
-        f"{'Token':<30}"
-        f"{'Frequency':>12}"
+    # Find selected token number
+    selected_index = tokens.index(
+        selected_token
     )
 
-    print("-" * 52)
+    selected_number = (
+        selected_index + 1
+    )
 
-    for index, token, frequency in candidates:
+    print_subsection(
+        "AVAILABLE TOKENS"
+    )
 
-        clean_token = (
-            str(token)
-            .replace("\n", "\\n")
-            .replace("\r", "\\r")
-        )
-
-        print(
-            f"{index + 1:<6}"
-            f"{clean_token:<30}"
-            f"{frequency:>12,}"
-        )
+    display_token_table(
+        top_50,
+        exclude_indices={
+            selected_number
+        }
+    )
 
     print()
 
     while True:
 
         choice = get_integer_input(
-            f"Choose the token you consider related to "
-            f"'{selected_token}': ",
+            "Enter related token number: ",
             1,
             len(tokens)
         )
 
-        chosen_token = tokens[choice - 1]
+        chosen_token = tokens[
+            choice - 1
+        ]
 
+        # Prevent same-token selection
         if chosen_token == selected_token:
 
             print(
@@ -444,12 +492,16 @@ def select_related_token(
             continue
 
         print()
+
         print(
-            f"[✓] Pair selected:"
+            "[✓] Relationship selected:"
         )
 
         print(
-            f"    {selected_token}  <->  {chosen_token}"
+            f"    "
+            f"{clean_token(selected_token)}"
+            f"  <->  "
+            f"{clean_token(chosen_token)}"
         )
 
         return chosen_token
@@ -463,17 +515,14 @@ def perform_task_3(
     tokens,
     top_50
 ):
-    """
-    Execute Task 3.
-
-    1. Select five tokens.
-    2. For every token, select one token that the user
-       considers related.
-    """
 
     print_section(
-        "TASK 3 - HUMAN TOKEN RELATIONSHIP SELECTION"
+        "TASK 3 — HUMAN TOKEN RELATIONSHIP SELECTION"
     )
+
+    # --------------------------------------------------------
+    # Select five tokens
+    # --------------------------------------------------------
 
     selected_tokens = select_five_tokens(
         tokens,
@@ -481,20 +530,40 @@ def perform_task_3(
     )
 
     print()
+
     print(
-        "Now choose the token that you believe is most "
-        "related to each selected token."
+        "You have selected five tokens."
     )
 
-    print()
     print(
-        "The choices will be used in Task 4 to calculate "
-        "cosine similarity."
+        "Now choose ONE related token for each."
+    )
+
+    print(
+        "These choices will be compared using cosine "
+        "similarity in Task 4."
     )
 
     pairs = []
 
-    for selected_token in selected_tokens:
+    # --------------------------------------------------------
+    # Select relationship for each token
+    # --------------------------------------------------------
+
+    for number, selected_token in enumerate(
+        selected_tokens,
+        start=1
+    ):
+
+        print()
+
+        print(
+            f"[{number}/5] Selecting related token for:"
+        )
+
+        print(
+            f"      {clean_token(selected_token)}"
+        )
 
         related_token = select_related_token(
             selected_token,
@@ -509,36 +578,41 @@ def perform_task_3(
             }
         )
 
-    result_df = pd.DataFrame(pairs)
+    result_df = pd.DataFrame(
+        pairs
+    )
 
     result_df.to_csv(
         TASK3_OUTPUT,
         index=False
     )
 
-    print()
-    print("=" * 78)
-    print("TASK 3 COMPLETE")
-    print("=" * 78)
+    # --------------------------------------------------------
+    # Final Task 3 summary
+    # --------------------------------------------------------
 
     print()
-    print(
-        f"Selected token pairs : {len(result_df)}"
+    print_section(
+        "TASK 3 COMPLETE — SELECTED TOKEN PAIRS"
     )
 
-    print(
-        f"Saved to              : {TASK3_OUTPUT}"
-    )
-
-    print()
-
-    for _, row in result_df.iterrows():
+    for number, row in enumerate(
+        result_df.itertuples(index=False),
+        start=1
+    ):
 
         print(
-            f"  {row['token_a']:<25}"
-            f" <-> "
-            f"{row['token_b']}"
+            f"{number}. "
+            f"{clean_token(row.token_a)}"
+            f"  <->  "
+            f"{clean_token(row.token_b)}"
         )
+
+    print()
+
+    print(
+        f"Saved to: {TASK3_OUTPUT}"
+    )
 
     return result_df
 
@@ -552,29 +626,25 @@ def perform_task_4(
     tokens,
     embedding_matrix
 ):
-    """
-    Calculate cosine similarity for the five manually
-    selected token pairs.
-    """
 
     print_section(
-        "TASK 4 - CALCULATING PAIR SIMILARITY"
+        "TASK 4 — CHECKING TOKEN SIMILARITY"
     )
 
     if pairs_df is None or pairs_df.empty:
 
         raise ValueError(
-            "No token pairs were selected for Task 4."
+            "No token pairs were selected."
         )
 
-    results = []
-
-    print()
     print(
-        "Calculating cosine similarity for each selected pair..."
+        "Calculating cosine similarity between "
+        "your selected pairs..."
     )
 
     print()
+
+    results = []
 
     for _, row in pairs_df.iterrows():
 
@@ -607,16 +677,29 @@ def perform_task_4(
             }
         )
 
-        print(
-            f"{token_a:<25}"
-            f" <-> "
-            f"{token_b:<25}"
-            f" : {similarity:.6f}"
-        )
-
     result_df = pd.DataFrame(
         results
     )
+
+    # --------------------------------------------------------
+    # Display results
+    # --------------------------------------------------------
+
+    print(
+        f"{'Token A':<25}"
+        f"{'Token B':<25}"
+        f"{'Cosine Similarity':>20}"
+    )
+
+    print("-" * 72)
+
+    for _, row in result_df.iterrows():
+
+        print(
+            f"{clean_token(row['token_a']):<25}"
+            f"{clean_token(row['token_b']):<25}"
+            f"{row['cosine_similarity']:>20.6f}"
+        )
 
     result_df.to_csv(
         TASK4_OUTPUT,
@@ -624,8 +707,9 @@ def perform_task_4(
     )
 
     print()
+
     print(
-        "[✓] Task 4 similarity calculation completed."
+        "[✓] Task 4 completed."
     )
 
     print(
@@ -640,9 +724,10 @@ def perform_task_4(
 # ============================================================
 
 def run_token_similarity():
-    """
-    Run Tasks 3 and 4 interactively.
-    """
+
+    # --------------------------------------------------------
+    # Load Task 2 outputs
+    # --------------------------------------------------------
 
     tokens, embedding_matrix, top_50 = (
         load_embedding_data()
@@ -667,9 +752,13 @@ def run_token_similarity():
         embedding_matrix
     )
 
+    # --------------------------------------------------------
+    # Final status
+    # --------------------------------------------------------
+
     print()
     print("=" * 78)
-    print("TASKS 3 AND 4 COMPLETED")
+    print("TASKS 3 & 4 COMPLETED")
     print("=" * 78)
 
     return {
