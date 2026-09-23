@@ -1,0 +1,17 @@
+{
+    "tokenizer": "character",
+    "dataset": "combined_dataset.csv",
+    "vocabulary_size": 42,
+    "total_sequences": 2670,
+    "total_tokens": 114629,
+    "average_sequence_length": 42.9322,
+    "min_sequence_length": 8,
+    "max_sequence_length": 121,
+    "embedding": {
+        "embedding_dimension": 128,
+        "embedding_matrix_rows": 42,
+        "embedding_matrix_columns": 128,
+        "embedding_matrix_shape": "42 x 128",
+        "embedding_parameters": 5376
+    }
+}

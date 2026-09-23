@@ -1,0 +1,114 @@
+{
+    "embedding_dimension": 128,
+    "number_of_tokens": 50,
+    "embedding_matrix_shape": [
+        50,
+        128
+    ],
+    "random_seed": 42,
+    "similarity_metric": "cosine_similarity",
+    "top_similar_pairs": [
+        {
+            "token_1": "path",
+            "token_2": "selection",
+            "similarity": 0.25605694232907256
+        },
+        {
+            "token_1": "pytest",
+            "token_2": "externals",
+            "similarity": 0.25436484054375613
+        },
+        {
+            "token_1": "/__",
+            "token_2": "benchmarks",
+            "similarity": 0.2523494916293816
+        },
+        {
+            "token_1": "response",
+            "token_2": "dependencies",
+            "similarity": 0.2422628690231048
+        },
+        {
+            "token_1": "an",
+            "token_2": "pytest",
+            "similarity": 0.23053795692895102
+        },
+        {
+            "token_1": "examples",
+            "token_2": "testing",
+            "similarity": 0.22371803867822257
+        },
+        {
+            "token_1": "py",
+            "token_2": "plot",
+            "similarity": 0.21944525700300388
+        },
+        {
+            "token_1": "utils",
+            "token_2": "ensemble",
+            "similarity": 0.21018145307433186
+        },
+        {
+            "token_1": "sklearn",
+            "token_2": "benchmarks",
+            "similarity": 0.20656596627935253
+        },
+        {
+            "token_1": "003",
+            "token_2": "security",
+            "similarity": 0.20486844027955528
+        }
+    ],
+    "top_least_similar_pairs": [
+        {
+            "token_1": "tests",
+            "token_2": "models",
+            "similarity": -0.24831168261929923
+        },
+        {
+            "token_1": "init",
+            "token_2": "path",
+            "similarity": -0.2404506594039724
+        },
+        {
+            "token_1": "models",
+            "token_2": "array",
+            "similarity": -0.2404062196751158
+        },
+        {
+            "token_1": "_",
+            "token_2": "params",
+            "similarity": -0.23775347107350214
+        },
+        {
+            "token_1": "array",
+            "token_2": "ensemble",
+            "similarity": -0.22477743945911116
+        },
+        {
+            "token_1": "__.",
+            "token_2": "validations",
+            "similarity": -0.22362597930229258
+        },
+        {
+            "token_1": "utils",
+            "token_2": "cluster",
+            "similarity": -0.22356671946908954
+        },
+        {
+            "token_1": "tests",
+            "token_2": "custom",
+            "similarity": -0.20546487626309862
+        },
+        {
+            "token_1": "model",
+            "token_2": "custom",
+            "similarity": -0.20510050009498812
+        },
+        {
+            "token_1": "utils",
+            "token_2": "example",
+            "similarity": -0.19608162195947976
+        }
+    ]
+}

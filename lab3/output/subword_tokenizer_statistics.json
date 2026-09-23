@@ -1,0 +1,21 @@
+{
+    "tokenizer": "subword",
+    "algorithm": "BPE",
+    "dataset": "combined_dataset.csv",
+    "target_vocabulary_size": 10000,
+    "vocabulary_size": 1755,
+    "total_sequences": 2670,
+    "total_tokens": 35067,
+    "unique_tokens_observed": 1208,
+    "average_sequence_length": 13.1337,
+    "min_sequence_length": 3,
+    "max_sequence_length": 37,
+    "embedding": {
+        "embedding_dimension": 128,
+        "embedding_matrix_rows": 1755,
+        "embedding_matrix_columns": 128,
+        "embedding_matrix_shape": "1755 x 128",
+        "embedding_parameters": 224640
+    },
+    "token_frequency_file": "subword_token_frequency.csv"
+}

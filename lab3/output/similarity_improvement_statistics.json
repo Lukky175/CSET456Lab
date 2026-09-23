@@ -1,0 +1,12 @@
+{
+    "algorithm": {
+        "type": "naive character-overlap embedding adjustment",
+        "learning_rate": 0.05,
+        "minimum_character_overlap": 0.4
+    },
+    "related_pairs_detected": 453,
+    "total_pairs_analyzed": 1225,
+    "average_similarity_before": -0.0018550769328122875,
+    "average_similarity_after": 0.11575376157388138,
+    "average_similarity_change": 0.1176088385066937
+}
